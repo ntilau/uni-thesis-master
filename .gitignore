@@ -1,0 +1,17 @@
+.vscode/
+obj/
+initial.*
+*.tmp
+*.auto
+*.lock
+*.semaphore
+*.sd
+*.asol*
+*.profile
+mf_*
+*.tv?
+*.nv?
+fields.*
+*.sfmesh
+*.imesh
+*.vtk
