@@ -1,0 +1,25 @@
+Face LumpPort1
+	LumpedPort
+		Mode1
+		ModeNum 1
+			LumpPort1_IntLine_1 { AR 3 0.0000000000000000e+000 0.0000000000000000e+000 -1.4399999999999999e-003 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	Impedance (5.0000000000000000e+001,0.0000000000000000e+000)
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face PerfE1
+	PerfectE
+
+Face PerfE2
+	PerfectE
+
+Face PerfE3
+	PerfectE
+
+Face PerfH1
+	PerfectH
+
+Face Rad1
+	Radiation
+

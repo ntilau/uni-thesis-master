@@ -1,0 +1,113 @@
+--------------------------------------------------------------------------------
+Translator Name    : Spatial InterOp Legacy API
+System Name        : Windows_NT
+Machine Name       : CQ61
+User Name          : Lorenzo
+Source System      : ACIS
+Destination System : IGES
+Start Time         : Wed Mar 10 16:59:48 2010
+
+--------------------------------------------------------------------------------
+Message : === Translation Options ===
+Message : ConvertAnalyticalSurfacesAndCurvesToSpline : false
+Message : IGES.*.Writer.TranslateSolidBodies : false
+Message : TranslateSolidBodies : true
+Message : SplitPeriodic : true
+Message : IGES.TranslateFreeText : false
+Message : TranslateFreeSurfaces : true
+Message : TranslateAttributes : false
+Message : IGES.TrimCurveReadPreference : 0
+Message : IGES.TranslateSheetsAsBoundedSurface : 0
+Message : AcceptBadData : false
+Message : IGES.TranslateGroupEntities : true
+Message : TranslateAssemblies : true
+Message : IGES.EndOfLineCharLength : 2
+Message : IGES.TranslatePlaneAsSweep : true
+Message : DoSplineResurface : true
+Message : IGES.TranslateSolidSurfsAsParametricSurf : true
+Message : IGES.FreePlaneBound : -1.000000
+Message : IGES.Flavor : 0
+Message : IGES.TranslateAnnotationsAsGeometry : false
+Message : TranslateLayersAndFilters : false
+Message : MaskEntitiesByDE :  
+Message : EBOM.ImportParts : true
+Message : Healing : true
+Message : TranslateSolidAsWires : false
+Message : IGES.TranslateGroupAsAssemblies : false
+Message : ConvertAnalyticalSurfacesToSpline : false
+Message : TranslateHiddenEntities : true
+Message : IGES.TranslatePlanarSheetsAsBoundedPlanes : false
+Message : IGES.TrimCurveWritePreference : 3
+Message : IGES.CopiousToStraightCurves : false
+Message : SplitAtG1Disc : true
+Message : IGES.MaskInclusive : false
+Message : IGES.WriteUnit : 
+Message : TranslateFreeCurves : true
+Message : TranslateFreePoints : false
+Message : IGES.TranslateWireAsCopious : false
+Message : IGES.*.Writer.TranslateSolidAsSheets : true
+Message : TranslateSolidAsSheets : false
+Message : TranslateSheetBodies : true
+Message : IGES.TempDirectory : 
+Message : MaskEntitiesByID :  
+Message : ConvertAnalyticalCurvesToSpline : false
+Message : IGES.CopiousToManyCurves : false
+Message : IGES.DateFormat : 0
+Message : ===========================
+--------------------------------------------------------------------------------
+Source Document Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Start BRep
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Source Representation Preprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+BRep Target Representation Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+End BRep
+Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Target Document Postprocessing Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-------------------------------Conversion Summary-------------------------------
+No. of Assemblies                         :    0
+No. of Solid Bodies                       :    0
+No. of Trim Bodies                        :    49
+No. of Wire Bodies                        :    0
+No. of Point Bodies                       :    0
+--------------------------------------------------------------------------------
+
+----------------------------IGES WRITE OPTIONS-------------------------------
+ 
+Write Unit ID           :2                                                      
+EndOFLine Char Len      :2                                                      
+WriteSurf  As NURBs     :0                                                      
+WriteCurve As NURBs     :0                                                      
+Write Solids As MSBOs   :0                                                      
+Write Solids As Sheets  :1                                                      
+Write Solids As Wires   :0                                                      
+Write Sheets As 144     :1                                                      
+Write Sheets As 143     :0                                                      
+Transfer Attributes     :0                                                      
+Jama Flavor             :0                                                      
+AutoCad Flavor          :0                                                      
+Wire As Copious         :0                                                      
+Write Tolerance(mm)     :0.0010000                                              
+Write MSBO as Param     :1                                                      
+
+Total No. of Root  Entities   Written: 49
+
+--------------------------------------------------------------------------------
+Output File is Successfully Written
+--------------------------------------------------------------------------------
+Finish Time : Wed Mar 10 16:59:49 2010
+
+--------------------------------------------------------------------------------
+Translation Result : Success
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------

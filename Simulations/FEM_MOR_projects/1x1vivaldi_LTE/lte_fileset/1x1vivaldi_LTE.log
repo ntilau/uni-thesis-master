@@ -1,0 +1,195 @@
+COMPUTERNAME         = PC-LORENZO
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 1x1vivaldi_LTE frequency 7.5e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real              0.16            0.152
+User          0.109201         0.109201
+Syst         0.0312002        0.0312002
+Refine with version V0
+SOLID dielectricSupport h = 0 p = 2
+SOLID internalDielectric h = 0 p = 2
+SOLID metalRodL h = 0 p = 2
+SOLID metalRodR h = 0 p = 2
+SOLID radiationBoundary h = 0 p = 2
+/************************** MESH STATISTICS ******************************/
+# pos      = 1122
+# nodes    = 1122
+# edges    = 7122
+# faces    = 11784
+# elements = 5783
+# raw DoF  = 37813
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             0.387            0.069
+User          0.296402        0.0624004
+Syst         0.0312002                0
+uncompressed matrix dimension = 37813
+time for assembling
+TIME___________Total/s__________Delta/s
+Real             0.958            0.571
+User          0.826805         0.530403
+Syst         0.0624004        0.0312002
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real             1.009            0.051
+User          0.873606        0.0468003
+Syst         0.0624004                0
+compressed matrix dimension = 37689
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real             1.533            0.524
+User           1.38841         0.514803
+Syst         0.0780005        0.0156001
+time for the rest
+TIME___________Total/s__________Delta/s
+Real             1.583             0.05
+User           1.43521        0.0468003
+Syst         0.0780005                0
+TIME___________Total/s__________Delta/s
+Real            32.283           32.123
+User           3.96243          3.85322
+Syst          0.577204         0.546003
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real            61.742           29.459
+User           32.8538          28.8914
+Syst          0.889206         0.312002
+
+done
+COMPUTERNAME         = PC-LORENZO
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 1x1vivaldi_LTE frequency 7.5e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real              0.16            0.152
+User          0.109201         0.109201
+Syst                 0                0
+Refine with version V0
+SOLID dielectricSupport h = 0 p = 2
+SOLID internalDielectric h = 0 p = 2
+SOLID metalRodL h = 0 p = 2
+SOLID metalRodR h = 0 p = 2
+SOLID radiationBoundary h = 0 p = 2
+/************************** MESH STATISTICS ******************************/
+# pos      = 1122
+# nodes    = 1122
+# edges    = 7122
+# faces    = 11784
+# elements = 5783
+# raw DoF  = 37813
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             0.384            0.069
+User          0.265202        0.0624004
+Syst                 0                0
+uncompressed matrix dimension = 37813
+time for assembling
+TIME___________Total/s__________Delta/s
+Real             0.949            0.565
+User          0.826805         0.561604
+Syst                 0                0
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real             0.996            0.047
+User          0.858005        0.0312002
+Syst         0.0156001        0.0156001
+compressed matrix dimension = 37689
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real               1.5            0.504
+User           1.32601         0.468003
+Syst         0.0468003        0.0312002
+time for the rest
+TIME___________Total/s__________Delta/s
+Real             1.549            0.049
+User           1.37281        0.0468003
+Syst         0.0468003                0
+TIME___________Total/s__________Delta/s
+Real             43.42            43.26
+User           3.83762          3.72842
+Syst          0.936006         0.936006
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real            69.424           26.004
+User           29.0162          25.1786
+Syst           1.54441         0.608404
+
+done
+COMPUTERNAME         = PC-LORENZO
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 1x1vivaldi_LTE frequency 7.5e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             0.159            0.149
+User          0.124801         0.124801
+Syst         0.0312002        0.0156001
+Refine with version V0
+SOLID dielectricSupport h = 0 p = 2
+SOLID internalDielectric h = 0 p = 2
+SOLID metalRodL h = 0 p = 2
+SOLID metalRodR h = 0 p = 2
+SOLID radiationBoundary h = 0 p = 2
+/************************** MESH STATISTICS ******************************/
+# pos      = 1122
+# nodes    = 1122
+# edges    = 7122
+# faces    = 11784
+# elements = 5783
+# raw DoF  = 37813
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real               0.4            0.071
+User          0.312002        0.0624004
+Syst         0.0468003                0
+uncompressed matrix dimension = 37813
+time for assembling
+TIME___________Total/s__________Delta/s
+Real             0.964            0.564
+User          0.858005         0.546003
+Syst         0.0468003                0
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real             1.012            0.048
+User          0.889206        0.0312002
+Syst         0.0468003                0
+compressed matrix dimension = 37689
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real             1.517            0.505
+User           1.35721         0.468003
+Syst         0.0780005        0.0312002
+time for the rest
+TIME___________Total/s__________Delta/s
+Real             1.568            0.051
+User           1.40401        0.0468003
+Syst         0.0780005                0
+TIME___________Total/s__________Delta/s
+Real             6.931            6.772
+User           3.79082          3.66602
+Syst           1.04521          1.01401
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real            33.721            26.79
+User           29.7338           25.943
+Syst           1.62241         0.577204
+
+done

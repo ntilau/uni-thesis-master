@@ -1,0 +1,7 @@
+Arg 0 = c:/program files (x86)/ansoft/hfss11/mesh3d_ng.exe
+Arg 1 = -ng
+Arg 2 = -emi_exec
+Arg 3 = init
+Arg 4 = Setup1
+Arg 5 = -output
+Arg 6 = initial

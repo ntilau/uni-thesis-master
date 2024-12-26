@@ -1,0 +1,5 @@
+dielectricSupport vacuum
+internalDielectric Teflon__tm
+metalRodL vacuum
+metalRodR vacuum
+radiationBoundary vacuum

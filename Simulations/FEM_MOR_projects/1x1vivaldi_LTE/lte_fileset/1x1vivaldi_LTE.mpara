@@ -1,0 +1,6 @@
+V0
+SOLID dielectricSupport 0 2
+SOLID internalDielectric 0 2
+SOLID metalRodL 0 2
+SOLID metalRodR 0 2
+SOLID radiationBoundary 0 2

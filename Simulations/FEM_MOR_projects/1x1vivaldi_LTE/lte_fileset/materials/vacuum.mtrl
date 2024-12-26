@@ -1,0 +1,8 @@
+{ FILE vacuum.mtrl
+  { MATERIAL_PROPERTY vacuum
+    3
+    EPSILON_RELATIVE Scal_Real { AR 1 1.000000000000000e+000 }
+    MU_RELATIVE Scal_Real { AR 1 1.000000000000000e+000 }
+    SIGMA Scal_Real { AR 1 0.000000000000000e+000 }
+  }
+}

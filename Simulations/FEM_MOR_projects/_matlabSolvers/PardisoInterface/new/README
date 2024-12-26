@@ -1,0 +1,10 @@
+MEX="/usr/local/matlab/bin/mex -v CC=icc CXX=icpc LD=icpc"
+
+LIBS='-L/home/heldmann/Ipopt/OBJintel-pardiso/libpar -lpardiso  -L/opt/intel/mkl/10.0.5.025/lib/em64t -liomp5 -lmkl_lapack -lmkl -lpthread -lm  -ldl  -L/opt/intel/mkl/10.0.5.025/lib/em64t -L/opt/intel/fce/10.1.018/lib -L/usr/lib/gcc/x86_64-redhat-linux/4.3.0/ -L/usr/lib/gcc/x86_64-redhat-linux/4.3.0/../../../../lib64 -lifport -lifcore -limf -lsvml -lm -lipgo -lirc -lgcc_s -lirc_s -ldl'
+
+FLAGS='-O -largeArrayDims'
+
+$MEX $FLAGS -output pardisoreorder pardisoreorder.c $LIBS
+$MEX $FLAGS -output pardisofactor pardisofactor.c $LIBS
+$MEX $FLAGS -output pardisoinit pardisoinit.c $LIBS
+$MEX $FLAGS -output pardisosolve pardisosolve.c $LIBS

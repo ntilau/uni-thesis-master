@@ -1,0 +1,7 @@
+$begin 'Krylov Vector File Header'
+	ByteOrder=1094861636
+	DataFormat='BINARY'
+	DataPrecision='Double'
+	ReducedSize=20
+	TotalSize=34797
+$end 'Krylov Vector File Header'
