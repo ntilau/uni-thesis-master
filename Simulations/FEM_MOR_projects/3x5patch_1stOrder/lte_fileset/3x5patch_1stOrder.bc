@@ -1,0 +1,252 @@
+Face ABC
+	Radiation
+
+Face Coaxes
+	PerfectE
+
+SolidSurface COAX_PIN
+	PerfectE
+
+SolidSurface COAX_PIN_1
+	PerfectE
+
+SolidSurface COAX_PIN_1_1
+	PerfectE
+
+SolidSurface COAX_PIN_1_2
+	PerfectE
+
+SolidSurface COAX_PIN_2
+	PerfectE
+
+SolidSurface COAX_PIN_2_1
+	PerfectE
+
+SolidSurface COAX_PIN_2_2
+	PerfectE
+
+SolidSurface COAX_PIN_3
+	PerfectE
+
+SolidSurface COAX_PIN_3_1
+	PerfectE
+
+SolidSurface COAX_PIN_3_2
+	PerfectE
+
+SolidSurface COAX_PIN_4
+	PerfectE
+
+SolidSurface COAX_PIN_4_1
+	PerfectE
+
+SolidSurface COAX_PIN_4_2
+	PerfectE
+
+SolidSurface COAX_PIN_5
+	PerfectE
+
+SolidSurface COAX_PIN_6
+	PerfectE
+
+Face GroundPlane
+	PerfectE
+
+SolidSurface PROBE
+	PerfectE
+
+SolidSurface PROBE_1
+	PerfectE
+
+SolidSurface PROBE_1_1
+	PerfectE
+
+SolidSurface PROBE_1_2
+	PerfectE
+
+SolidSurface PROBE_2
+	PerfectE
+
+SolidSurface PROBE_2_1
+	PerfectE
+
+SolidSurface PROBE_2_2
+	PerfectE
+
+SolidSurface PROBE_3
+	PerfectE
+
+SolidSurface PROBE_3_1
+	PerfectE
+
+SolidSurface PROBE_3_2
+	PerfectE
+
+SolidSurface PROBE_4
+	PerfectE
+
+SolidSurface PROBE_4_1
+	PerfectE
+
+SolidSurface PROBE_4_2
+	PerfectE
+
+SolidSurface PROBE_5
+	PerfectE
+
+SolidSurface PROBE_6
+	PerfectE
+
+Face Patches
+	PerfectE
+
+Face WavePort1
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort1_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort2
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort2_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort3
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort3_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort4
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort4_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort5
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort5_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort6
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort6_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort7
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort7_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort8
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort8_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort9
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort9_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort10
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort10_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort11
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort11_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort12
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort12_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort13
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort13_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort14
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort14_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+
+Face WavePort15
+	WavePort
+	NumMode 1
+		Mode1
+		ModeNum 1
+			WavePort15_IntLine_1 { AR 3  0.0  0.0 0.0 }
+			CharImp Zpi
+		RenormImp 5.0000000000000000e+001
+	ExcitationPhase (1.0000000000000000e+000,0.0000000000000000e+000)
+

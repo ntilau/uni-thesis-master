@@ -1,0 +1,74 @@
+WavePort1
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_2_2
+
+WavePort2
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_2
+
+WavePort3
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_2_1
+
+WavePort4
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_1_2
+
+WavePort5
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_1
+
+WavePort6
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_1_1
+
+WavePort7
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_6
+
+WavePort8
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN
+
+WavePort9
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_5
+
+WavePort10
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_3_2
+
+WavePort11
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_3
+
+WavePort12
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_3_1
+
+WavePort13
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_4_2
+
+WavePort14
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_4
+
+WavePort15
+	ReferenceElectrode Coaxes
+	NumTerminalElectrodes 1
+    COAX_PIN_4_1

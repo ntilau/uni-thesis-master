@@ -1,0 +1,315 @@
+COMPUTERNAME         = CQ61
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 
+
+
+
+//*******************************************************************************
+project name 3x5patch frequency 2.35e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             7.488            7.473
+User           7.02004          7.00444
+Syst          0.343202         0.343202
+Refine with version V0
+SOLID COAX h = 0 p = 1
+SOLID COAX_1 h = 0 p = 1
+SOLID COAX_1_1 h = 0 p = 1
+SOLID COAX_1_2 h = 0 p = 1
+SOLID COAX_2 h = 0 p = 1
+SOLID COAX_2_1 h = 0 p = 1
+SOLID COAX_2_2 h = 0 p = 1
+SOLID COAX_3 h = 0 p = 1
+SOLID COAX_3_1 h = 0 p = 1
+SOLID COAX_3_2 h = 0 p = 1
+SOLID COAX_4 h = 0 p = 1
+SOLID COAX_4_1 h = 0 p = 1
+SOLID COAX_4_2 h = 0 p = 1
+SOLID COAX_5 h = 0 p = 1
+SOLID COAX_6 h = 0 p = 1
+SOLID COAX_PIN h = 0 p = 1
+SOLID COAX_PIN_1 h = 0 p = 1
+SOLID COAX_PIN_1_1 h = 0 p = 1
+SOLID COAX_PIN_1_2 h = 0 p = 1
+SOLID COAX_PIN_2 h = 0 p = 1
+SOLID COAX_PIN_2_1 h = 0 p = 1
+SOLID COAX_PIN_2_2 h = 0 p = 1
+SOLID COAX_PIN_3 h = 0 p = 1
+SOLID COAX_PIN_3_1 h = 0 p = 1
+SOLID COAX_PIN_3_2 h = 0 p = 1
+SOLID COAX_PIN_4 h = 0 p = 1
+SOLID COAX_PIN_4_1 h = 0 p = 1
+SOLID COAX_PIN_4_2 h = 0 p = 1
+SOLID COAX_PIN_5 h = 0 p = 1
+SOLID COAX_PIN_6 h = 0 p = 1
+SOLID OUTER_BOX h = 0 p = 1
+SOLID PROBE h = 0 p = 1
+SOLID PROBE_1 h = 0 p = 1
+SOLID PROBE_1_1 h = 0 p = 1
+SOLID PROBE_1_2 h = 0 p = 1
+SOLID PROBE_2 h = 0 p = 1
+SOLID PROBE_2_1 h = 0 p = 1
+SOLID PROBE_2_2 h = 0 p = 1
+SOLID PROBE_3 h = 0 p = 1
+SOLID PROBE_3_1 h = 0 p = 1
+SOLID PROBE_3_2 h = 0 p = 1
+SOLID PROBE_4 h = 0 p = 1
+SOLID PROBE_4_1 h = 0 p = 1
+SOLID PROBE_4_2 h = 0 p = 1
+SOLID PROBE_5 h = 0 p = 1
+SOLID PROBE_6 h = 0 p = 1
+SOLID SUBSTRAT h = 0 p = 1
+/************************** MESH STATISTICS ******************************/
+# pos      = 57600
+# nodes    = 57600
+# edges    = 365651
+# faces    = 603070
+# elements = 295018
+# raw DoF  = 364020
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real            28.594            1.809
+User           18.8449          1.76281
+Syst          0.592804        0.0468003
+uncompressed matrix dimension = 364020
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            36.441            7.847
+User           26.5982          7.75325
+Syst          0.686404        0.0936006
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            40.154            3.713
+User            30.233          3.63482
+Syst          0.764405        0.0780005
+compressed matrix dimension = 358648
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real             43.68            3.526
+User           33.6806          3.44762
+Syst          0.826805        0.0624004
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            44.272            0.592
+User           34.2578         0.577204
+Syst          0.842405        0.0156001
+TIME___________Total/s__________Delta/s
+Real           107.156           99.668
+User           76.1909          69.1708
+Syst           11.3101          10.9669
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real           1046.48          939.322
+User           1008.84          932.652
+Syst           14.6173          3.30722
+
+done
+COMPUTERNAME         = CQ61
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 
+
+
+
+//*******************************************************************************
+project name 3x5patch frequency 2.35e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real              7.55             7.55
+User           6.94204          6.94204
+Syst          0.452403         0.452403
+Refine with version V0
+SOLID COAX h = 0 p = 1
+SOLID COAX_1 h = 0 p = 1
+SOLID COAX_1_1 h = 0 p = 1
+SOLID COAX_1_2 h = 0 p = 1
+SOLID COAX_2 h = 0 p = 1
+SOLID COAX_2_1 h = 0 p = 1
+SOLID COAX_2_2 h = 0 p = 1
+SOLID COAX_3 h = 0 p = 1
+SOLID COAX_3_1 h = 0 p = 1
+SOLID COAX_3_2 h = 0 p = 1
+SOLID COAX_4 h = 0 p = 1
+SOLID COAX_4_1 h = 0 p = 1
+SOLID COAX_4_2 h = 0 p = 1
+SOLID COAX_5 h = 0 p = 1
+SOLID COAX_6 h = 0 p = 1
+SOLID COAX_PIN h = 0 p = 1
+SOLID COAX_PIN_1 h = 0 p = 1
+SOLID COAX_PIN_1_1 h = 0 p = 1
+SOLID COAX_PIN_1_2 h = 0 p = 1
+SOLID COAX_PIN_2 h = 0 p = 1
+SOLID COAX_PIN_2_1 h = 0 p = 1
+SOLID COAX_PIN_2_2 h = 0 p = 1
+SOLID COAX_PIN_3 h = 0 p = 1
+SOLID COAX_PIN_3_1 h = 0 p = 1
+SOLID COAX_PIN_3_2 h = 0 p = 1
+SOLID COAX_PIN_4 h = 0 p = 1
+SOLID COAX_PIN_4_1 h = 0 p = 1
+SOLID COAX_PIN_4_2 h = 0 p = 1
+SOLID COAX_PIN_5 h = 0 p = 1
+SOLID COAX_PIN_6 h = 0 p = 1
+SOLID OUTER_BOX h = 0 p = 1
+SOLID PROBE h = 0 p = 1
+SOLID PROBE_1 h = 0 p = 1
+SOLID PROBE_1_1 h = 0 p = 1
+SOLID PROBE_1_2 h = 0 p = 1
+SOLID PROBE_2 h = 0 p = 1
+SOLID PROBE_2_1 h = 0 p = 1
+SOLID PROBE_2_2 h = 0 p = 1
+SOLID PROBE_3 h = 0 p = 1
+SOLID PROBE_3_1 h = 0 p = 1
+SOLID PROBE_3_2 h = 0 p = 1
+SOLID PROBE_4 h = 0 p = 1
+SOLID PROBE_4_1 h = 0 p = 1
+SOLID PROBE_4_2 h = 0 p = 1
+SOLID PROBE_5 h = 0 p = 1
+SOLID PROBE_6 h = 0 p = 1
+SOLID SUBSTRAT h = 0 p = 1
+/************************** MESH STATISTICS ******************************/
+# pos      = 57600
+# nodes    = 57600
+# edges    = 365651
+# faces    = 603070
+# elements = 295018
+# raw DoF  = 364020
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real            31.044             1.81
+User           19.7965          1.74721
+Syst          0.717605        0.0468003
+uncompressed matrix dimension = 364020
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            39.078            8.034
+User           27.7526          7.95605
+Syst          0.733205        0.0156001
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            42.759            3.681
+User           31.2782          3.52562
+Syst          0.873606         0.140401
+compressed matrix dimension = 358648
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            46.425            3.666
+User           34.8038          3.52562
+Syst          0.967206        0.0936006
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            47.018            0.593
+User           35.3342         0.530403
+Syst          0.998406        0.0312002
+TIME___________Total/s__________Delta/s
+Real           116.283          108.733
+User           77.1425          70.2005
+Syst           12.6049          12.1525
+Computing fields...
+COMPUTERNAME         = CQ61
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 3x5patch frequency 2.35e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             8.112            8.019
+User           7.11365          7.11365
+Syst          0.436803         0.436803
+Refine with version V0
+SOLID COAX h = 0 p = 1
+SOLID COAX_1 h = 0 p = 1
+SOLID COAX_1_1 h = 0 p = 1
+SOLID COAX_1_2 h = 0 p = 1
+SOLID COAX_2 h = 0 p = 1
+SOLID COAX_2_1 h = 0 p = 1
+SOLID COAX_2_2 h = 0 p = 1
+SOLID COAX_3 h = 0 p = 1
+SOLID COAX_3_1 h = 0 p = 1
+SOLID COAX_3_2 h = 0 p = 1
+SOLID COAX_4 h = 0 p = 1
+SOLID COAX_4_1 h = 0 p = 1
+SOLID COAX_4_2 h = 0 p = 1
+SOLID COAX_5 h = 0 p = 1
+SOLID COAX_6 h = 0 p = 1
+SOLID COAX_PIN h = 0 p = 1
+SOLID COAX_PIN_1 h = 0 p = 1
+SOLID COAX_PIN_1_1 h = 0 p = 1
+SOLID COAX_PIN_1_2 h = 0 p = 1
+SOLID COAX_PIN_2 h = 0 p = 1
+SOLID COAX_PIN_2_1 h = 0 p = 1
+SOLID COAX_PIN_2_2 h = 0 p = 1
+SOLID COAX_PIN_3 h = 0 p = 1
+SOLID COAX_PIN_3_1 h = 0 p = 1
+SOLID COAX_PIN_3_2 h = 0 p = 1
+SOLID COAX_PIN_4 h = 0 p = 1
+SOLID COAX_PIN_4_1 h = 0 p = 1
+SOLID COAX_PIN_4_2 h = 0 p = 1
+SOLID COAX_PIN_5 h = 0 p = 1
+SOLID COAX_PIN_6 h = 0 p = 1
+SOLID OUTER_BOX h = 0 p = 1
+SOLID PROBE h = 0 p = 1
+SOLID PROBE_1 h = 0 p = 1
+SOLID PROBE_1_1 h = 0 p = 1
+SOLID PROBE_1_2 h = 0 p = 1
+SOLID PROBE_2 h = 0 p = 1
+SOLID PROBE_2_1 h = 0 p = 1
+SOLID PROBE_2_2 h = 0 p = 1
+SOLID PROBE_3 h = 0 p = 1
+SOLID PROBE_3_1 h = 0 p = 1
+SOLID PROBE_3_2 h = 0 p = 1
+SOLID PROBE_4 h = 0 p = 1
+SOLID PROBE_4_1 h = 0 p = 1
+SOLID PROBE_4_2 h = 0 p = 1
+SOLID PROBE_5 h = 0 p = 1
+SOLID PROBE_6 h = 0 p = 1
+SOLID SUBSTRAT h = 0 p = 1
+/************************** MESH STATISTICS ******************************/
+# pos      = 57600
+# nodes    = 57600
+# edges    = 365651
+# faces    = 603070
+# elements = 295018
+# raw DoF  = 364020
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real            31.839            1.825
+User           19.4377          1.76281
+Syst          0.733205        0.0468003
+uncompressed matrix dimension = 364020
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            40.092            8.253
+User           27.4406          8.00285
+Syst          0.842405         0.109201
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            43.789            3.697
+User           30.9194          3.47882
+Syst           1.01401         0.171601
+compressed matrix dimension = 358648
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            47.346            3.557
+User           34.3514          3.43202
+Syst           1.13881         0.124801
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            47.938            0.592
+User            34.913         0.561604
+Syst           1.17001        0.0312002
+TIME___________Total/s__________Delta/s
+Real           158.059          149.947
+User           76.4249          69.3112
+Syst           12.8545          12.4177
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real           1409.69          1251.63
+User           1318.43             1242
+Syst           18.9385          6.08404
+
+done

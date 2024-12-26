@@ -1,0 +1,8 @@
+{ FILE Teflon__tm.mtrl
+  { MATERIAL_PROPERTY Teflon__tm
+    3
+    EPSILON_RELATIVE Scal_Complex { AC 1 ( 2.100000000000000e+000,-2.100000000000000e-003) } 
+    MU_RELATIVE Scal_Real { AR 1 1.000000000000000e+000 }
+    SIGMA Scal_Real { AR 1 0.000000000000000e+000 }
+  }
+}
