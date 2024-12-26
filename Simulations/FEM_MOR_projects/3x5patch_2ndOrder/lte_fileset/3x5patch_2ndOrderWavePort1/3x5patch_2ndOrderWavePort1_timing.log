@@ -1,0 +1,120 @@
+
+
+//*******************************************************************************
+project name: .\3x5patch_2ndOrderWavePort1\3x5patch_2ndOrderWavePort1
+frequency: 2.35e+009
+start solving: 
+TIME___________Total/s__________Delta/s
+Real             0.187            0.187
+User         0.0780005        0.0780005
+Syst         0.0624004        0.0624004
+solving finished: 
+TIME___________Total/s__________Delta/s
+Real             0.499            0.312
+User          0.265202         0.187201
+Syst         0.0624004                0
+start writing solution file: 
+TIME___________Total/s__________Delta/s
+Real             0.748            0.249
+User          0.405603         0.140401
+Syst         0.0780005        0.0156001
+writing solution file finished: 
+TIME___________Total/s__________Delta/s
+Real              0.78            0.032
+User          0.421203        0.0156001
+Syst         0.0780005                0
+program finished: 
+TIME___________Total/s__________Delta/s
+Real              0.78                0
+User          0.421203                0
+Syst         0.0780005                0
+
+
+//*******************************************************************************
+project name: .\3x5patch_2ndOrderWavePort1\3x5patch_2ndOrderWavePort1
+frequency: 2.35e+009
+start solving: 
+TIME___________Total/s__________Delta/s
+Real              0.17             0.17
+User         0.0936006        0.0936006
+Syst         0.0312002        0.0312002
+solving finished: 
+TIME___________Total/s__________Delta/s
+Real             0.415            0.245
+User          0.249602         0.156001
+Syst         0.0312002                0
+start writing solution file: 
+TIME___________Total/s__________Delta/s
+Real             0.496            0.081
+User          0.327602        0.0780005
+Syst         0.0468003        0.0156001
+writing solution file finished: 
+TIME___________Total/s__________Delta/s
+Real             0.521            0.025
+User          0.358802        0.0312002
+Syst         0.0468003                0
+program finished: 
+TIME___________Total/s__________Delta/s
+Real             0.525            0.004
+User          0.358802                0
+Syst         0.0468003                0
+
+
+//*******************************************************************************
+project name: .\3x5patch_2ndOrderWavePort1\3x5patch_2ndOrderWavePort1
+frequency: 2.35e+009
+start solving: 
+TIME___________Total/s__________Delta/s
+Real             0.156            0.156
+User          0.140401         0.140401
+Syst         0.0156001        0.0156001
+solving finished: 
+TIME___________Total/s__________Delta/s
+Real             0.405            0.249
+User          0.296402         0.156001
+Syst         0.0156001                0
+start writing solution file: 
+TIME___________Total/s__________Delta/s
+Real             0.483            0.078
+User          0.358802        0.0624004
+Syst         0.0312002        0.0156001
+writing solution file finished: 
+TIME___________Total/s__________Delta/s
+Real             0.499            0.016
+User          0.374402        0.0156001
+Syst         0.0468003        0.0156001
+program finished: 
+TIME___________Total/s__________Delta/s
+Real             0.499                0
+User          0.374402                0
+Syst         0.0468003                0
+
+
+//*******************************************************************************
+project name: .\3x5patch_2ndOrderWavePort1\3x5patch_2ndOrderWavePort1
+frequency: 2.35e+009
+start solving: 
+TIME___________Total/s__________Delta/s
+Real             0.171            0.171
+User          0.124801         0.124801
+Syst                 0                0
+solving finished: 
+TIME___________Total/s__________Delta/s
+Real             0.436            0.265
+User          0.280802         0.156001
+Syst         0.0156001        0.0156001
+start writing solution file: 
+TIME___________Total/s__________Delta/s
+Real              0.53            0.094
+User          0.358802        0.0780005
+Syst         0.0312002        0.0156001
+writing solution file finished: 
+TIME___________Total/s__________Delta/s
+Real             0.546            0.016
+User          0.374402        0.0156001
+Syst         0.0312002                0
+program finished: 
+TIME___________Total/s__________Delta/s
+Real             0.546                0
+User          0.374402                0
+Syst         0.0312002                0

@@ -1,0 +1,487 @@
+COMPUTERNAME         = PC-LORENZO
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 3x5patch_2ndOrder frequency 2.35e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.073            3.073
+User           2.76122          2.76122
+Syst          0.140401         0.109201
+Refine with version V0
+SOLID COAX h = 0 p = 2
+SOLID COAX_1 h = 0 p = 2
+SOLID COAX_1_1 h = 0 p = 2
+SOLID COAX_1_2 h = 0 p = 2
+SOLID COAX_2 h = 0 p = 2
+SOLID COAX_2_1 h = 0 p = 2
+SOLID COAX_2_2 h = 0 p = 2
+SOLID COAX_3 h = 0 p = 2
+SOLID COAX_3_1 h = 0 p = 2
+SOLID COAX_3_2 h = 0 p = 2
+SOLID COAX_4 h = 0 p = 2
+SOLID COAX_4_1 h = 0 p = 2
+SOLID COAX_4_2 h = 0 p = 2
+SOLID COAX_5 h = 0 p = 2
+SOLID COAX_6 h = 0 p = 2
+SOLID COAX_PIN h = 0 p = 2
+SOLID COAX_PIN_1 h = 0 p = 2
+SOLID COAX_PIN_1_1 h = 0 p = 2
+SOLID COAX_PIN_1_2 h = 0 p = 2
+SOLID COAX_PIN_2 h = 0 p = 2
+SOLID COAX_PIN_2_1 h = 0 p = 2
+SOLID COAX_PIN_2_2 h = 0 p = 2
+SOLID COAX_PIN_3 h = 0 p = 2
+SOLID COAX_PIN_3_1 h = 0 p = 2
+SOLID COAX_PIN_3_2 h = 0 p = 2
+SOLID COAX_PIN_4 h = 0 p = 2
+SOLID COAX_PIN_4_1 h = 0 p = 2
+SOLID COAX_PIN_4_2 h = 0 p = 2
+SOLID COAX_PIN_5 h = 0 p = 2
+SOLID COAX_PIN_6 h = 0 p = 2
+SOLID OUTER_BOX h = 0 p = 2
+SOLID PROBE h = 0 p = 2
+SOLID PROBE_1 h = 0 p = 2
+SOLID PROBE_1_1 h = 0 p = 2
+SOLID PROBE_1_2 h = 0 p = 2
+SOLID PROBE_2 h = 0 p = 2
+SOLID PROBE_2_1 h = 0 p = 2
+SOLID PROBE_2_2 h = 0 p = 2
+SOLID PROBE_3 h = 0 p = 2
+SOLID PROBE_3_1 h = 0 p = 2
+SOLID PROBE_3_2 h = 0 p = 2
+SOLID PROBE_4 h = 0 p = 2
+SOLID PROBE_4_1 h = 0 p = 2
+SOLID PROBE_4_2 h = 0 p = 2
+SOLID PROBE_5 h = 0 p = 2
+SOLID PROBE_6 h = 0 p = 2
+SOLID SUBSTRAT h = 0 p = 2
+/************************** MESH STATISTICS ******************************/
+# pos      = 22846
+# nodes    = 22846
+# edges    = 144237
+# faces    = 237884
+# elements = 116492
+# raw DoF  = 757331
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             20.28            1.373
+User           8.86086          1.34161
+Syst          0.421203        0.0312002
+uncompressed matrix dimension = 757331
+time for assembling
+TIME___________Total/s__________Delta/s
+Real             32.51            12.23
+User           20.7325          11.8717
+Syst          0.686404         0.265202
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real             39.67             7.16
+User            27.581          6.84844
+Syst          0.998406         0.312002
+compressed matrix dimension = 748465
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            56.706           17.036
+User           44.3823          16.8013
+Syst           1.20121         0.202801
+time for the rest
+TIME___________Total/s__________Delta/s
+Real             58.64            1.934
+User           46.2387          1.85641
+Syst           1.27921        0.0780005
+Start solving 
+TIME___________Total/s__________Delta/s
+Real           211.255          211.255
+User           242.862          242.862
+Syst           6.67684          6.67684
+TIME___________Total/s__________Delta/s
+Real           247.541           36.286
+User           250.756          7.89365
+Syst           7.53485         0.858005
+
+Excitation bc(WavePort1)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort1)0: Euclidian residual norm = 7.75393e-010
+
+Solution of Excitation bc(WavePort1)0 statistic
+Excitation bc(WavePort1)0: Euclidian residual norm = 2.08946e-014
+TIME___________Total/s__________Delta/s
+Real           426.785          179.244
+User           262.238          11.4817
+Syst           11.4661          3.93123
+
+Excitation bc(WavePort2)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort2)0: Euclidian residual norm = 9.69259e-010
+
+Solution of Excitation bc(WavePort2)0 statistic
+Excitation bc(WavePort2)0: Euclidian residual norm = 2.61188e-014
+TIME___________Total/s__________Delta/s
+Real            494.91           68.125
+User           272.737          10.4989
+Syst           13.9933          2.COMPUTERNAME         = PC-LORENZO
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 3x5patch_2ndOrder frequency 2.35e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.082            3.062
+User           2.73002          2.71442
+Syst          0.187201         0.171601
+Refine with version V0
+SOLID COAX h = 0 p = 2
+SOLID COAX_1 h = 0 p = 2
+SOLID COAX_1_1 h = 0 p = 2
+SOLID COAX_1_2 h = 0 p = 2
+SOLID COAX_2 h = 0 p = 2
+SOLID COAX_2_1 h = 0 p = 2
+SOLID COAX_2_2 h = 0 p = 2
+SOLID COAX_3 h = 0 p = 2
+SOLID COAX_3_1 h = 0 p = 2
+SOLID COAX_3_2 h = 0 p = 2
+SOLID COAX_4 h = 0 p = 2
+SOLID COAX_4_1 h = 0 p = 2
+SOLID COAX_4_2 h = 0 p = 2
+SOLID COAX_5 h = 0 p = 2
+SOLID COAX_6 h = 0 p = 2
+SOLID COAX_PIN h = 0 p = 2
+SOLID COAX_PIN_1 h = 0 p = 2
+SOLID COAX_PIN_1_1 h = 0 p = 2
+SOLID COAX_PIN_1_2 h = 0 p = 2
+SOLID COAX_PIN_2 h = 0 p = 2
+SOLID COAX_PIN_2_1 h = 0 p = 2
+SOLID COAX_PIN_2_2 h = 0 p = 2
+SOLID COAX_PIN_3 h = 0 p = 2
+SOLID COAX_PIN_3_1 h = 0 p = 2
+SOLID COAX_PIN_3_2 h = 0 p = 2
+SOLID COAX_PIN_4 h = 0 p = 2
+SOLID COAX_PIN_4_1 h = 0 p = 2
+SOLID COAX_PIN_4_2 h = 0 p = 2
+SOLID COAX_PIN_5 h = 0 p = 2
+SOLID COAX_PIN_6 h = 0 p = 2
+SOLID OUTER_BOX h = 0 p = 2
+SOLID PROBE h = 0 p = 2
+SOLID PROBE_1 h = 0 p = 2
+SOLID PROBE_1_1 h = 0 p = 2
+SOLID PROBE_1_2 h = 0 p = 2
+SOLID PROBE_2 h = 0 p = 2
+SOLID PROBE_2_1 h = 0 p = 2
+SOLID PROBE_2_2 h = 0 p = 2
+SOLID PROBE_3 h = 0 p = 2
+SOLID PROBE_3_1 h = 0 p = 2
+SOLID PROBE_3_2 h = 0 p = 2
+SOLID PROBE_4 h = 0 p = 2
+SOLID PROBE_4_1 h = 0 p = 2
+SOLID PROBE_4_2 h = 0 p = 2
+SOLID PROBE_5 h = 0 p = 2
+SOLID PROBE_6 h = 0 p = 2
+SOLID SUBSTRAT h = 0 p = 2
+/************************** MESH STATISTICS ******************************/
+# pos      = 22846
+# nodes    = 22846
+# edges    = 144237
+# faces    = 237884
+# elements = 116492
+# raw DoF  = 757331
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real            19.437            1.397
+User           9.00126          1.32601
+Syst          0.468003        0.0312002
+uncompressed matrix dimension = 757331
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            31.806           12.369
+User           21.0913          12.0901
+Syst          0.702005         0.234002
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            39.196             7.39
+User           28.2986          7.20725
+Syst          0.858005         0.156001
+compressed matrix dimension = 748465
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            56.656            17.46
+User           45.0063          16.7077
+Syst           1.41961         0.561604
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            58.722            2.066
+User           46.9563          1.95001
+Syst           1.48201        0.0624004
+Start solving 
+TIME___________Total/s__________Delta/s
+Real           254.447          254.447
+User           241.474          241.474
+Syst           9.40686          9.40686
+TIME___________Total/s__________Delta/s
+Real           294.697            40.25
+User            250.35          8.87646
+Syst           10.5145          1.10761
+
+Excitation bc(WavePort1)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort1)0: Euclidian residual norm = 7.60029e-010
+
+Solution of Excitation bc(WavePort1)0 statistic
+Excitation bc(WavePort1)0: Euclidian residual norm = 2.04806e-014
+TIME___________Total/s__________Delta/s
+Real           551.889          257.192
+User           263.049          12.6985
+Syst           16.0837          5.56924
+
+Excitation bc(WavePort2)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort2)0: Euclidian residual norm = 1.01526e-009
+
+Solution of Excitation bc(WavePort2)0 statistic
+Excitation bc(WavePort2)0: Euclidian residual norm = 2.73583e-014
+TIME___________Total/s__________Delta/s
+Real            720.41          168.521
+User           274.811          11.7625
+Syst           20.4361          4.35243
+
+Excitation bc(WavePort3)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort3)0: Euclidian residual norm = 8.91396e-010
+
+Solution of Excitation bc(WavePort3)0 statistic
+Excitation bc(WavePort3)0: Euclidian residual norm = 2.40206e-014
+TIME___________Total/s__________Delta/s
+Real           1012.54          292.126
+User           286.106          11.2945
+Syst           24.8822          4.44603
+
+Excitation bc(WavePort4)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort4)0: Euclidian residual norm = 7.97223e-010
+
+Solution of Excitation bc(WavePort4)0 statistic
+Excitation bc(WavePort4)0: Euclidian residual norm = 2.14829e-014
+TIME___________Total/s__________Delta/s
+Real           1222.64          210.101
+User           296.964          10.8577
+Syst           28.9226          4.04043
+
+Excitation bc(WavePort5)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort5)0: Euclidian residual norm = 9.73543e-010
+
+Solution of Excitation bc(WavePort5)0 statistic
+Excitation bc(WavePort5)0: Euclidian residual norm = 2.62342e-014
+TIME___________Total/s__________Delta/s
+Real           1355.28          132.647
+User           307.213          10.2493
+Syst           32.5106          3.58802
+
+Excitation bc(WavePort6)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort6)0: Euclidian residual norm = 8.56558e-010
+
+Solution of Excitation bc(WavePort6)0 statistic
+Excitation bc(WavePort6)0: Euclidian residual norm = 2.30818e-014
+TIME___________Total/s__________Delta/s
+Real           1488.62          133.334
+User           318.273          11.0605
+Syst           35.6306          3.12002
+
+Excitation bc(WavePort7)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort7)0: Euclidian residual norm = 8.22992e-010
+
+Solution of Excitation bc(WavePort7)0 statistic
+Excitation bc(WavePort7)0: Euclidian residual norm = 2.21773e-014
+TIME___________Total/s__________Delta/s
+Real            1691.7          203.081
+User           329.256          10.9825
+Syst           41.0283          5.39763
+
+Excitation bc(WavePort8)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort8)0: Euclidian residual norm = 9.99227e-010
+
+Solution of Excitation bc(WavePort8)0 statistic
+Excitation bc(WavePort8)0: Euclidian residual norm = 2.69263e-014
+TIME___________Total/s__________Delta/s
+Real           1831.12          139.417
+User           339.708          10.4521
+Syst           43.9299          2.90162
+
+Excitation bc(WavePort9)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort9)0: Euclidian residual norm = 1.04124e-009
+
+Solution of Excitation bc(WavePort9)0 statistic
+Excitation bc(WavePort9)0: Euclidian residual norm = 2.80584e-014
+TIME___________Total/s__________Delta/s
+Real           1956.84          125.721
+User           350.597          10.8889
+Syst           47.3619          3.43202
+
+Excitation bc(WavePort10)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort10)0: Euclidian residual norm = 7.79523e-010
+
+Solution of Excitation bc(WavePort10)0 statistic
+Excitation bc(WavePort10)0: Euclidian residual norm = 2.10059e-014
+TIME___________Total/s__________Delta/s
+Real           2065.01           108.17
+User           361.564          10.9669
+Syst           50.6691          3.30722
+
+Excitation bc(WavePort11)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort11)0: Euclidian residual norm = 8.83994e-010
+
+Solution of Excitation bc(WavePort11)0 statistic
+Excitation bc(WavePort11)0: Euclidian residual norm = 2.38211e-014
+TIME___________Total/s__________Delta/s
+Real           2167.09          102.087
+User           372.452          10.8889
+Syst           55.5208          4.85163
+
+Excitation bc(WavePort12)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort12)0: Euclidian residual norm = 9.31318e-010
+
+Solution of Excitation bc(WavePort12)0 statistic
+Excitation bc(WavePort12)0: Euclidian residual norm = 2.50963e-014
+TIME___________Total/s__________Delta/s
+Real           2373.98          206.888
+User           382.982          10.5301
+Syst           59.2492          3.72842
+
+Excitation bc(WavePort13)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort13)0: Euclidian residual norm = 9.83928e-010
+
+Solution of Excitation bc(WavePort13)0 statistic
+Excitation bc(WavePort13)0: Euclidian residual norm = 2.6514e-014
+TIME___________Total/s__________Delta/s
+Real           2475.09          101.103
+User            393.84          10.8577
+Syst            62.182          2.93282
+
+Excitation bc(WavePort14)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort14)0: Euclidian residual norm = 8.74548e-010
+
+Solution of Excitation bc(WavePort14)0 statistic
+Excitation bc(WavePort14)0: Euclidian residual norm = 2.35665e-014
+TIME___________Total/s__________Delta/s
+Real            2616.8          141.711
+User           404.729          10.8889
+Syst           67.2832          5.10123
+
+Excitation bc(WavePort15)0: Euclidian r.h.s. norm   = 37109.7
+Excitation bc(WavePort15)0: Euclidian residual norm = 8.40195e-010
+
+Solution of Excitation bc(WavePort15)0 statistic
+Excitation bc(WavePort15)0: Euclidian residual norm = 2.26408e-014
+TIME___________Total/s__________Delta/s
+Real           2701.38           2698.3
+User           407.553          404.823
+Syst           70.3253           70.138
+Computing fields...
+COMPUTERNAME         = PC-LORENZO
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name 3x5patch_2ndOrder frequency 2.35e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             2.932            2.901
+User           2.71442          2.71442
+Syst         0.0780005        0.0780005
+Refine with version V0
+SOLID COAX h = 0 p = 2
+SOLID COAX_1 h = 0 p = 2
+SOLID COAX_1_1 h = 0 p = 2
+SOLID COAX_1_2 h = 0 p = 2
+SOLID COAX_2 h = 0 p = 2
+SOLID COAX_2_1 h = 0 p = 2
+SOLID COAX_2_2 h = 0 p = 2
+SOLID COAX_3 h = 0 p = 2
+SOLID COAX_3_1 h = 0 p = 2
+SOLID COAX_3_2 h = 0 p = 2
+SOLID COAX_4 h = 0 p = 2
+SOLID COAX_4_1 h = 0 p = 2
+SOLID COAX_4_2 h = 0 p = 2
+SOLID COAX_5 h = 0 p = 2
+SOLID COAX_6 h = 0 p = 2
+SOLID COAX_PIN h = 0 p = 2
+SOLID COAX_PIN_1 h = 0 p = 2
+SOLID COAX_PIN_1_1 h = 0 p = 2
+SOLID COAX_PIN_1_2 h = 0 p = 2
+SOLID COAX_PIN_2 h = 0 p = 2
+SOLID COAX_PIN_2_1 h = 0 p = 2
+SOLID COAX_PIN_2_2 h = 0 p = 2
+SOLID COAX_PIN_3 h = 0 p = 2
+SOLID COAX_PIN_3_1 h = 0 p = 2
+SOLID COAX_PIN_3_2 h = 0 p = 2
+SOLID COAX_PIN_4 h = 0 p = 2
+SOLID COAX_PIN_4_1 h = 0 p = 2
+SOLID COAX_PIN_4_2 h = 0 p = 2
+SOLID COAX_PIN_5 h = 0 p = 2
+SOLID COAX_PIN_6 h = 0 p = 2
+SOLID OUTER_BOX h = 0 p = 2
+SOLID PROBE h = 0 p = 2
+SOLID PROBE_1 h = 0 p = 2
+SOLID PROBE_1_1 h = 0 p = 2
+SOLID PROBE_1_2 h = 0 p = 2
+SOLID PROBE_2 h = 0 p = 2
+SOLID PROBE_2_1 h = 0 p = 2
+SOLID PROBE_2_2 h = 0 p = 2
+SOLID PROBE_3 h = 0 p = 2
+SOLID PROBE_3_1 h = 0 p = 2
+SOLID PROBE_3_2 h = 0 p = 2
+SOLID PROBE_4 h = 0 p = 2
+SOLID PROBE_4_1 h = 0 p = 2
+SOLID PROBE_4_2 h = 0 p = 2
+SOLID PROBE_5 h = 0 p = 2
+SOLID PROBE_6 h = 0 p = 2
+SOLID SUBSTRAT h = 0 p = 2
+/************************** MESH STATISTICS ******************************/
+# pos      = 22846
+# nodes    = 22846
+# edges    = 144237
+# faces    = 237884
+# elements = 116492
+# raw DoF  = 757331
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real            19.656            1.404
+User           8.86086          1.34161
+Syst          0.234002        0.0312002
+uncompressed matrix dimension = 757331
+time for assembling
+TIME___________Total/s__________Delta/s
+Real             32.12           12.464
+User           20.7949          11.9341
+Syst          0.452403         0.218401
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real             39.39             7.27
+User           27.7994          7.00444
+Syst          0.639604         0.187201
+compressed matrix dimension = 748465
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            56.269           16.879
+User           44.3823          16.5829
+Syst          0.904806         0.265202
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            58.219             1.95
+User           46.2387          1.85641
+Syst          0.982806        0.0780005
+TIME___________Total/s__________Delta/s
+Real           234.032            231.1
+User           163.473          160.759
+Syst           22.5265          22.4485
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real           563.177          329.145
+User           471.965          308.492
+Syst           30.1862          7.65965
+
+done
