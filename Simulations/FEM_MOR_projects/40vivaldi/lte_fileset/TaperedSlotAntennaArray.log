@@ -1,0 +1,1898 @@
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             4.156            4.156
+User           3.64063          3.64063
+Syst          0.203125         0.203125
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             4.203            4.188
+User           3.73438          3.73438
+Syst          0.203125         0.203125
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 1
+SOLID Box25 h = 0 p = 1
+SOLID Box9 h = 0 p = 1
+SOLID Part15 h = 0 p = 1
+SOLID Part16 h = 0 p = 1
+SOLID Part37 h = 0 p = 1
+SOLID Part38 h = 0 p = 1
+SOLID Part39 h = 0 p = 1
+SOLID Part40 h = 0 p = 1
+SOLID Part41 h = 0 p = 1
+/************************** Time for Refinement ******************************/
+TIME___________Total/s__________Delta/s
+Real              5.89            1.687
+User           5.26563          1.53125
+Syst          0.265625           0.0625
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 188757
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             8.109            1.016
+User           7.26563                1
+Syst            0.3125                0
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            18.202           10.093
+User           17.2344          9.96875
+Syst          0.359375         0.046875
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            22.796            4.594
+User           21.5938          4.35938
+Syst          0.578125          0.21875
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            24.405            1.609
+User            23.125          1.53125
+Syst          0.640625           0.0625
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            26.796            2.391
+User           25.3906          2.26563
+Syst          0.765625            0.125
+Start solving 
+TIME___________Total/s__________Delta/s
+Real            45.264            39.39
+User           49.5156            44.25
+Syst           1.40625          1.15625
+TIME___________Total/s__________Delta/s
+Real            46.702            1.438
+User           51.3594          1.84375
+Syst           1.46875           0.0625
+
+Excitation bc(LumpPort1)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort1)0: Euclidian residual norm = 1.02766e-012
+
+Solution of Excitation bc(LumpPort1)0 statistic
+Excitation bc(LumpPort1)0: Euclidian residual norm = 8.57565e-014
+TIME___________Total/s__________Delta/s
+Real            48.374            1.672
+User           53.4688          2.10938
+Syst           1.53125           0.0625
+
+Excitation bc(LumpPort2)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort2)0: Euclidian residual norm = 2.49305e-013
+
+Solution of Excitation bc(LumpPort2)0 statistic
+Excitation bc(LumpPort2)0: Euclidian residual norm = 2.08042e-014
+TIME___________Total/s__________Delta/s
+Real            49.999            1.625
+User              55.5          2.03125
+Syst           1.59375           0.0625
+
+Excitation bc(LumpPort3)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort3)0: Euclidian residual norm = 3.55728e-013
+
+Solution of Excitation bc(LumpPort3)0 statistic
+Excitation bc(LumpPort3)0: Euclidian residual norm = 2.96851e-014
+TIME___________Total/s__________Delta/s
+Real            51.733            1.734
+User           57.6094          2.10938
+Syst           1.70313         0.109375
+
+Excitation bc(LumpPort4)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort4)0: Euclidian residual norm = 6.28695e-013
+
+Solution of Excitation bc(LumpPort4)0 statistic
+Excitation bc(LumpPort4)0: Euclidian residual norm = 5.24638e-014
+TIME___________Total/s__________Delta/s
+Real            53.389            1.656
+User           59.7344            2.125
+Syst              1.75         0.046875
+
+Excitation bc(LumpPort5)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort5)0: Euclidian residual norm = 2.94382e-013
+
+Solution of Excitation bc(LumpPort5)0 statistic
+Excitation bc(LumpPort5)0: Euclidian residual norm = 2.45659e-014
+TIME___________Total/s__________Delta/s
+Real            55.014            1.625
+User           61.7813          2.04688
+Syst            1.8125           0.0625
+
+Excitation bc(LumpPort6)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort6)0: Euclidian residual norm = 3.31781e-013
+
+Solution of Excitation bc(LumpPort6)0 statistic
+Excitation bc(LumpPort6)0: Euclidian residual norm = 2.76867e-014
+TIME___________Total/s__________Delta/s
+Real            56.686            1.672
+User           63.8906          2.10938
+Syst           1.89063         0.078125
+
+Excitation bc(LumpPort7)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort7)0: Euclidian residual norm = 3.57843e-013
+
+Solution of Excitation bc(LumpPort7)0 statistic
+Excitation bc(LumpPort7)0: Euclidian residual norm = 2.98616e-014
+TIME___________Total/s__________Delta/s
+Real            58.311            1.625
+User           65.9688          2.07813
+Syst           1.95313           0.0625
+
+Excitation bc(LumpPort8)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort8)0: Euclidian residual norm = 2.32849e-013
+
+Solution of Excitation bc(LumpPort8)0 statistic
+Excitation bc(LumpPort8)0: Euclidian residual norm = 1.9431e-014
+TIME___________Total/s__________Delta/s
+Real            59.951             1.64
+User           68.0625          2.09375
+Syst                 2         0.046875
+
+Excitation bc(LumpPort9)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort9)0: Euclidian residual norm = 3.56063e-013
+
+Solution of Excitation bc(LumpPort9)0 statistic
+Excitation bc(LumpPort9)0: Euclidian residual norm = 2.9713e-014
+TIME___________Total/s__________Delta/s
+Real            61.608            1.657
+User           70.1719          2.10938
+Syst            2.0625           0.0625
+
+Excitation bc(LumpPort10)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort10)0: Euclidian residual norm = 6.27973e-013
+
+Solution of Excitation bc(LumpPort10)0 statistic
+Excitation bc(LumpPort10)0: Euclidian residual norm = 5.24035e-014
+TIME___________Total/s__________Delta/s
+Real            63.295            1.687
+User           72.2969            2.125
+Syst           2.10938         0.046875
+
+Excitation bc(LumpPort11)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort11)0: Euclidian residual norm = 1.70627e-012
+
+Solution of Excitation bc(LumpPort11)0 statistic
+Excitation bc(LumpPort11)0: Euclidian residual norm = 1.42386e-013
+TIME___________Total/s__________Delta/s
+Real            64.905             1.61
+User           74.3125          2.01563
+Syst           2.21875         0.109375
+
+Excitation bc(LumpPort12)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort12)0: Euclidian residual norm = 5.51558e-013
+
+Solution of Excitation bc(LumpPort12)0 statistic
+Excitation bc(LumpPort12)0: Euclidian residual norm = 4.60269e-014
+TIME___________Total/s__________Delta/s
+Real            66.545             1.64
+User           76.3594          2.04688
+Syst           2.32813         0.109375
+
+Excitation bc(LumpPort13)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort13)0: Euclidian residual norm = 1.01834e-012
+
+Solution of Excitation bc(LumpPort13)0 statistic
+Excitation bc(LumpPort13)0: Euclidian residual norm = 8.49795e-014
+TIME___________Total/s__________Delta/s
+Real             68.17            1.625
+User           78.4688          2.10938
+Syst             2.375         0.046875
+
+Excitation bc(LumpPort14)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort14)0: Euclidian residual norm = 6.90897e-013
+
+Solution of Excitation bc(LumpPort14)0 statistic
+Excitation bc(LumpPort14)0: Euclidian residual norm = 5.76545e-014
+TIME___________Total/s__________Delta/s
+Real            69.826            1.656
+User           80.5313           2.0625
+Syst           2.45313         0.078125
+
+Excitation bc(LumpPort15)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort15)0: Euclidian residual norm = 2.19288e-013
+
+Solution of Excitation bc(LumpPort15)0 statistic
+Excitation bc(LumpPort15)0: Euclidian residual norm = 1.82993e-014
+TIME___________Total/s__________Delta/s
+Real            71.451            1.625
+User           82.6094          2.07813
+Syst           2.53125         0.078125
+
+Excitation bc(LumpPort16)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort16)0: Euclidian residual norm = 6.21521e-013
+
+Solution of Excitation bc(LumpPort16)0 statistic
+Excitation bc(LumpPort16)0: Euclidian residual norm = 5.18651e-014
+TIME___________Total/s__________Delta/s
+Real            73.107            1.656
+User           84.7969           2.1875
+Syst           2.53125                0
+
+Excitation bc(LumpPort17)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort17)0: Euclidian residual norm = 4.52323e-013
+
+Solution of Excitation bc(LumpPort17)0 statistic
+Excitation bc(LumpPort17)0: Euclidian residual norm = 3.77458e-014
+TIME___________Total/s__________Delta/s
+Real            74.732            1.625
+User           86.8438          2.04688
+Syst           2.64063         0.109375
+
+Excitation bc(LumpPort18)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort18)0: Euclidian residual norm = 9.9709e-014
+
+Solution of Excitation bc(LumpPort18)0 statistic
+Excitation bc(LumpPort18)0: Euclidian residual norm = 8.32059e-015
+TIME___________Total/s__________Delta/s
+Real            76.373            1.641
+User            88.875          2.03125
+Syst           2.73438          0.09375
+
+Excitation bc(LumpPort19)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort19)0: Euclidian residual norm = 2.63278e-013
+
+Solution of Excitation bc(LumpPort19)0 statistic
+Excitation bc(LumpPort19)0: Euclidian residual norm = 2.19702e-014
+TIME___________Total/s__________Delta/s
+Real            78.045            1.672
+User           90.9531          2.07813
+Syst           2.85938            0.125
+
+Excitation bc(LumpPort20)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort20)0: Euclidian residual norm = 5.42683e-013
+
+Solution of Excitation bc(LumpPort20)0 statistic
+Excitation bc(LumpPort20)0: Euclidian residual norm = 4.52862e-014
+TIME___________Total/s__________Delta/s
+Real             79.67            1.625
+User           93.0156           2.0625
+Syst            2.9375         0.078125
+
+Excitation bc(LumpPort21)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort21)0: Euclidian residual norm = 3.63926e-013
+
+Solution of Excitation bc(LumpPort21)0 statistic
+Excitation bc(LumpPort21)0: Euclidian residual norm = 3.03692e-014
+TIME___________Total/s__________Delta/s
+Real             81.31             1.64
+User            95.125          2.10938
+Syst           2.98438         0.046875
+
+Excitation bc(LumpPort22)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort22)0: Euclidian residual norm = 2.28504e-013
+
+Solution of Excitation bc(LumpPort22)0 statistic
+Excitation bc(LumpPort22)0: Euclidian residual norm = 1.90683e-014
+TIME___________Total/s__________Delta/s
+Real            82.982            1.672
+User           97.2344          2.10938
+Syst            3.0625         0.078125
+
+Excitation bc(LumpPort23)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort23)0: Euclidian residual norm = 2.10073e-013
+
+Solution of Excitation bc(LumpPort23)0 statistic
+Excitation bc(LumpPort23)0: Euclidian residual norm = 1.75303e-014
+TIME___________Total/s__________Delta/s
+Real            84.607            1.625
+User           99.2813          2.04688
+Syst           3.10938         0.046875
+
+Excitation bc(LumpPort24)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort24)0: Euclidian residual norm = 3.04551e-013
+
+Solution of Excitation bc(LumpPort24)0 statistic
+Excitation bc(LumpPort24)0: Euclidian residual norm = 2.54144e-014
+TIME___________Total/s__________Delta/s
+Real            86.263            1.656
+User           101.375          2.09375
+Syst            3.1875         0.078125
+
+Excitation bc(LumpPort25)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort25)0: Euclidian residual norm = 3.0289e-013
+
+Solution of Excitation bc(LumpPort25)0 statistic
+Excitation bc(LumpPort25)0: Euclidian residual norm = 2.52758e-014
+TIME___________Total/s__________Delta/s
+Real             87.92            1.657
+User           103.469          2.09375
+Syst           3.29688         0.109375
+
+Excitation bc(LumpPort26)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort26)0: Euclidian residual norm = 2.33983e-013
+
+Solution of Excitation bc(LumpPort26)0 statistic
+Excitation bc(LumpPort26)0: Euclidian residual norm = 1.95256e-014
+TIME___________Total/s__________Delta/s
+Real             89.56             1.64
+User           105.578          2.10938
+Syst            3.3125         0.015625
+
+Excitation bc(LumpPort27)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort27)0: Euclidian residual norm = 4.33483e-013
+
+Solution of Excitation bc(LumpPort27)0 statistic
+Excitation bc(LumpPort27)0: Euclidian residual norm = 3.61736e-014
+TIME___________Total/s__________Delta/s
+Real            91.216            1.656
+User           107.656          2.07813
+Syst           3.40625          0.09375
+
+Excitation bc(LumpPort28)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort28)0: Euclidian residual norm = 2.02422e-013
+
+Solution of Excitation bc(LumpPort28)0 statistic
+Excitation bc(LumpPort28)0: Euclidian residual norm = 1.68918e-014
+TIME___________Total/s__________Delta/s
+Real            92.826             1.61
+User           109.641          1.98438
+Syst           3.53125            0.125
+
+Excitation bc(LumpPort29)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort29)0: Euclidian residual norm = 6.3133e-013
+
+Solution of Excitation bc(LumpPort29)0 statistic
+Excitation bc(LumpPort29)0: Euclidian residual norm = 5.26837e-014
+TIME___________Total/s__________Delta/s
+Real            94.498            1.672
+User           111.797          2.15625
+Syst           3.57813         0.046875
+
+Excitation bc(LumpPort30)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort30)0: Euclidian residual norm = 1.08131e-013
+
+Solution of Excitation bc(LumpPort30)0 statistic
+Excitation bc(LumpPort30)0: Euclidian residual norm = 9.02343e-015
+TIME___________Total/s__________Delta/s
+Real            96.123            1.625
+User           113.781          1.98438
+Syst           3.65625         0.078125
+
+Excitation bc(LumpPort31)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort31)0: Euclidian residual norm = 3.31659e-013
+
+Solution of Excitation bc(LumpPort31)0 statistic
+Excitation bc(LumpPort31)0: Euclidian residual norm = 2.76765e-014
+TIME___________Total/s__________Delta/s
+Real            97.779            1.656
+User           115.891          2.10938
+Syst              3.75          0.09375
+
+Excitation bc(LumpPort32)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort32)0: Euclidian residual norm = 9.26159e-013
+
+Solution of Excitation bc(LumpPort32)0 statistic
+Excitation bc(LumpPort32)0: Euclidian residual norm = 7.72868e-014
+TIME___________Total/s__________Delta/s
+Real            99.419             1.64
+User           117.953           2.0625
+Syst           3.84375          0.09375
+
+Excitation bc(LumpPort33)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort33)0: Euclidian residual norm = 1.67734e-013
+
+Solution of Excitation bc(LumpPort33)0 statistic
+Excitation bc(LumpPort33)0: Euclidian residual norm = 1.39972e-014
+TIME___________Total/s__________Delta/s
+Real           101.076            1.657
+User           120.063          2.10938
+Syst           3.90625           0.0625
+
+Excitation bc(LumpPort34)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort34)0: Euclidian residual norm = 7.7422e-013
+
+Solution of Excitation bc(LumpPort34)0 statistic
+Excitation bc(LumpPort34)0: Euclidian residual norm = 6.46077e-014
+TIME___________Total/s__________Delta/s
+Real           102.732            1.656
+User           122.156          2.09375
+Syst            3.9375          0.03125
+
+Excitation bc(LumpPort35)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort35)0: Euclidian residual norm = 8.36377e-013
+
+Solution of Excitation bc(LumpPort35)0 statistic
+Excitation bc(LumpPort35)0: Euclidian residual norm = 6.97946e-014
+TIME___________Total/s__________Delta/s
+Real           104.404            1.672
+User           124.234          2.07813
+Syst           4.01563         0.078125
+
+Excitation bc(LumpPort36)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort36)0: Euclidian residual norm = 2.44769e-013
+
+Solution of Excitation bc(LumpPort36)0 statistic
+Excitation bc(LumpPort36)0: Euclidian residual norm = 2.04257e-014
+TIME___________Total/s__________Delta/s
+Real           106.091            1.687
+User           126.313          2.07813
+Syst           4.07813           0.0625
+
+Excitation bc(LumpPort37)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort37)0: Euclidian residual norm = 1.59513e-013
+
+Solution of Excitation bc(LumpPort37)0 statistic
+Excitation bc(LumpPort37)0: Euclidian residual norm = 1.33112e-014
+TIME___________Total/s__________Delta/s
+Real           107.701             1.61
+User           128.375           2.0625
+Syst           4.14063           0.0625
+
+Excitation bc(LumpPort38)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort38)0: Euclidian residual norm = 9.54219e-014
+
+Solution of Excitation bc(LumpPort38)0 statistic
+Excitation bc(LumpPort38)0: Euclidian residual norm = 7.96284e-015
+TIME___________Total/s__________Delta/s
+Real           109.357            1.656
+User           130.516          2.14063
+Syst            4.1875         0.046875
+
+Excitation bc(LumpPort39)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort39)0: Euclidian residual norm = 2.73458e-013
+
+Solution of Excitation bc(LumpPort39)0 statistic
+Excitation bc(LumpPort39)0: Euclidian residual norm = 2.28197e-014
+TIME___________Total/s__________Delta/s
+Real           111.091            1.734
+User           132.703           2.1875
+Syst           4.23438         0.046875
+
+Excitation bc(LumpPort40)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort40)0: Euclidian residual norm = 9.1468e-013
+
+Solution of Excitation bc(LumpPort40)0 statistic
+Excitation bc(LumpPort40)0: Euclidian residual norm = 7.63289e-014
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.984            3.969
+User           3.70313          3.70313
+Syst          0.109375          0.09375
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 1
+SOLID Box25 h = 0 p = 1
+SOLID Box9 h = 0 p = 1
+SOLID Part15 h = 0 p = 1
+SOLID Part16 h = 0 p = 1
+SOLID Part37 h = 0 p = 1
+SOLID Part38 h = 0 p = 1
+SOLID Part39 h = 0 p = 1
+SOLID Part40 h = 0 p = 1
+SOLID Part41 h = 0 p = 1
+/************************** Time for Refinement ******************************/
+TIME___________Total/s__________Delta/s
+Real             5.624             1.64
+User           5.23438          1.53125
+Syst          0.140625          0.03125
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 188757
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             7.749            1.031
+User           7.29688                1
+Syst          0.203125          0.03125
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            17.749               10
+User             17.25          9.95313
+Syst              0.25         0.046875
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real             22.28            4.531
+User           21.4844          4.23438
+Syst          0.546875         0.296875
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            23.843            1.563
+User           23.0156          1.53125
+Syst          0.578125          0.03125
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            26.249            2.406
+User             25.25          2.23438
+Syst          0.703125            0.125
+Start solving 
+TIME___________Total/s__________Delta/s
+Real            44.374           38.765
+User            49.125          43.8906
+Syst           1.35938          1.21875
+TIME___________Total/s__________Delta/s
+Real            45.764             1.39
+User           50.9688          1.84375
+Syst             1.375         0.015625
+
+Excitation bc(LumpPort1)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort1)0: Euclidian residual norm = 7.10579e-013
+
+Solution of Excitation bc(LumpPort1)0 statistic
+Excitation bc(LumpPort1)0: Euclidian residual norm = 5.92969e-014
+TIME___________Total/s__________Delta/s
+Real            47.374             1.61
+User           52.9531          1.98438
+Syst           1.45313         0.078125
+
+Excitation bc(LumpPort2)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort2)0: Euclidian residual norm = 2.68102e-013
+
+Solution of Excitation bc(LumpPort2)0 statistic
+Excitation bc(LumpPort2)0: Euclidian residual norm = 2.23728e-014
+TIME___________Total/s__________Delta/s
+Real            48.967            1.593
+User           54.9688          2.01563
+Syst           1.48438          0.03125
+
+Excitation bc(LumpPort3)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort3)0: Euclidian residual norm = 2.29598e-013
+
+Solution of Excitation bc(LumpPort3)0 statistic
+Excitation bc(LumpPort3)0: Euclidian residual norm = 1.91596e-014
+TIME___________Total/s__________Delta/s
+Real            50.717             1.75
+User           57.0469          2.07813
+Syst           1.57813          0.09375
+
+Excitation bc(LumpPort4)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort4)0: Euclidian residual norm = 7.31152e-013
+
+Solution of Excitation bc(LumpPort4)0 statistic
+Excitation bc(LumpPort4)0: Euclidian residual norm = 6.10137e-014
+TIME___________Total/s__________Delta/s
+Real            52.311            1.594
+User           59.0781          2.03125
+Syst           1.65625         0.078125
+
+Excitation bc(LumpPort5)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort5)0: Euclidian residual norm = 2.31151e-013
+
+Solution of Excitation bc(LumpPort5)0 statistic
+Excitation bc(LumpPort5)0: Euclidian residual norm = 1.92893e-014
+TIME___________Total/s__________Delta/s
+Real            53.889            1.578
+User           61.0781                2
+Syst           1.71875           0.0625
+
+Excitation bc(LumpPort6)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort6)0: Euclidian residual norm = 2.91661e-013
+
+Solution of Excitation bc(LumpPort6)0 statistic
+Excitation bc(LumpPort6)0: Euclidian residual norm = 2.43387e-014
+TIME___________Total/s__________Delta/s
+Real            55.498            1.609
+User           63.1875          2.10938
+Syst           1.73438         0.015625
+
+Excitation bc(LumpPort7)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort7)0: Euclidian residual norm = 3.28311e-013
+
+Solution of Excitation bc(LumpPort7)0 statistic
+Excitation bc(LumpPort7)0: Euclidian residual norm = 2.73971e-014
+TIME___________Total/s__________Delta/s
+Real            57.077            1.579
+User           65.2344          2.04688
+Syst              1.75         0.015625
+
+Excitation bc(LumpPort8)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort8)0: Euclidian residual norm = 2.50589e-013
+
+Solution of Excitation bc(LumpPort8)0 statistic
+Excitation bc(LumpPort8)0: Euclidian residual norm = 2.09114e-014
+TIME___________Total/s__________Delta/s
+Real            58.858            1.781
+User           67.3594            2.125
+Syst            1.8125           0.0625
+
+Excitation bc(LumpPort9)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort9)0: Euclidian residual norm = 8.11263e-013
+
+Solution of Excitation bc(LumpPort9)0 statistic
+Excitation bc(LumpPort9)0: Euclidian residual norm = 6.76989e-014
+TIME___________Total/s__________Delta/s
+Real            60.467            1.609
+User           69.3906          2.03125
+Syst            1.9375            0.125
+
+Excitation bc(LumpPort10)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort10)0: Euclidian residual norm = 5.5755e-013
+
+Solution of Excitation bc(LumpPort10)0 statistic
+Excitation bc(LumpPort10)0: Euclidian residual norm = 4.65269e-014
+TIME___________Total/s__________Delta/s
+Real             62.03            1.563
+User           71.4219          2.03125
+Syst           1.96875          0.03125
+
+Excitation bc(LumpPort11)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort11)0: Euclidian residual norm = 1.10533e-012
+
+Solution of Excitation bc(LumpPort11)0 statistic
+Excitation bc(LumpPort11)0: Euclidian residual norm = 9.22388e-014
+TIME___________Total/s__________Delta/s
+Real            63.592            1.562
+User            73.375          1.95313
+Syst           2.07813         0.109375
+
+Excitation bc(LumpPort12)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort12)0: Euclidian residual norm = 4.7101e-013
+
+Solution of Excitation bc(LumpPort12)0 statistic
+Excitation bc(LumpPort12)0: Euclidian residual norm = 3.93052e-014
+TIME___________Total/s__________Delta/s
+Real            65.201            1.609
+User           75.4063          2.03125
+Syst             2.125         0.046875
+
+Excitation bc(LumpPort13)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort13)0: Euclidian residual norm = 6.92612e-013
+
+Solution of Excitation bc(LumpPort13)0 statistic
+Excitation bc(LumpPort13)0: Euclidian residual norm = 5.77976e-014
+TIME___________Total/s__________Delta/s
+Real            66.811             1.61
+User              77.5          2.09375
+Syst           2.15625          0.03125
+
+Excitation bc(LumpPort14)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort14)0: Euclidian residual norm = 8.78228e-013
+
+Solution of Excitation bc(LumpPort14)0 statistic
+Excitation bc(LumpPort14)0: Euclidian residual norm = 7.3287e-014
+TIME___________Total/s__________Delta/s
+Real            68.436            1.625
+User           79.5938          2.09375
+Syst           2.23438         0.078125
+
+Excitation bc(LumpPort15)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort15)0: Euclidian residual norm = 2.14023e-013
+
+Solution of Excitation bc(LumpPort15)0 statistic
+Excitation bc(LumpPort15)0: Euclidian residual norm = 1.78599e-014
+TIME___________Total/s__________Delta/s
+Real            70.045            1.609
+User           81.6719          2.07813
+Syst              2.25         0.015625
+
+Excitation bc(LumpPort16)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort16)0: Euclidian residual norm = 5.44172e-013
+
+Solution of Excitation bc(LumpPort16)0 statistic
+Excitation bc(LumpPort16)0: Euclidian residual norm = 4.54105e-014
+TIME___________Total/s__________Delta/s
+Real            71.623            1.578
+User           83.6563          1.98438
+Syst           2.32813         0.078125
+
+Excitation bc(LumpPort17)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort17)0: Euclidian residual norm = 3.8812e-013
+
+Solution of Excitation bc(LumpPort17)0 statistic
+Excitation bc(LumpPort17)0: Euclidian residual norm = 3.23881e-014
+TIME___________Total/s__________Delta/s
+Real            73.217            1.594
+User           85.6563                2
+Syst           2.42188          0.09375
+
+Excitation bc(LumpPort18)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort18)0: Euclidian residual norm = 1.15759e-013
+
+Solution of Excitation bc(LumpPort18)0 statistic
+Excitation bc(LumpPort18)0: Euclidian residual norm = 9.65992e-015
+TIME___________Total/s__________Delta/s
+Real            74.795            1.578
+User           87.6563                2
+Syst           2.48438           0.0625
+
+Excitation bc(LumpPort19)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort19)0: Euclidian residual norm = 3.25691e-013
+
+Solution of Excitation bc(LumpPort19)0 statistic
+Excitation bc(LumpPort19)0: Euclidian residual norm = 2.71785e-014
+TIME___________Total/s__________Delta/s
+Real            76.404            1.609
+User           89.7344          2.07813
+Syst           2.51563          0.03125
+
+Excitation bc(LumpPort20)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort20)0: Euclidian residual norm = 6.07032e-013
+
+Solution of Excitation bc(LumpPort20)0 statistic
+Excitation bc(LumpPort20)0: Euclidian residual norm = 5.06561e-014
+TIME___________Total/s__________Delta/s
+Real            78.014             1.61
+User           91.7813          2.04688
+Syst           2.57813           0.0625
+
+Excitation bc(LumpPort21)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort21)0: Euclidian residual norm = 3.00254e-013
+
+Solution of Excitation bc(LumpPort21)0 statistic
+Excitation bc(LumpPort21)0: Euclidian residual norm = 2.50559e-014
+TIME___________Total/s__________Delta/s
+Real            79.592            1.578
+User           93.7969          2.01563
+Syst           2.64063           0.0625
+
+Excitation bc(LumpPort22)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort22)0: Euclidian residual norm = 1.90209e-013
+
+Solution of Excitation bc(LumpPort22)0 statistic
+Excitation bc(LumpPort22)0: Euclidian residual norm = 1.58727e-014
+TIME___________Total/s__________Delta/s
+Real            81.185            1.593
+User             95.75          1.95313
+Syst              2.75         0.109375
+
+Excitation bc(LumpPort23)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort23)0: Euclidian residual norm = 1.8505e-013
+
+Solution of Excitation bc(LumpPort23)0 statistic
+Excitation bc(LumpPort23)0: Euclidian residual norm = 1.54422e-014
+TIME___________Total/s__________Delta/s
+Real             82.81            1.625
+User           97.8438          2.09375
+Syst           2.78125          0.03125
+
+Excitation bc(LumpPort24)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort24)0: Euclidian residual norm = 2.75227e-013
+
+Solution of Excitation bc(LumpPort24)0 statistic
+Excitation bc(LumpPort24)0: Euclidian residual norm = 2.29673e-014
+TIME___________Total/s__________Delta/s
+Real            84.404            1.594
+User            99.875          2.03125
+Syst           2.82813         0.046875
+
+Excitation bc(LumpPort25)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort25)0: Euclidian residual norm = 3.19585e-013
+
+Solution of Excitation bc(LumpPort25)0 statistic
+Excitation bc(LumpPort25)0: Euclidian residual norm = 2.66689e-014
+TIME___________Total/s__________Delta/s
+Real             86.06            1.656
+User           101.953          2.07813
+Syst           2.85938          0.03125
+
+Excitation bc(LumpPort26)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort26)0: Euclidian residual norm = 2.2336e-013
+
+Solution of Excitation bc(LumpPort26)0 statistic
+Excitation bc(LumpPort26)0: Euclidian residual norm = 1.86391e-014
+TIME___________Total/s__________Delta/s
+Real            87.795            1.735
+User           104.047          2.09375
+Syst           2.95313          0.09375
+
+Excitation bc(LumpPort27)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort27)0: Euclidian residual norm = 4.12821e-013
+
+Solution of Excitation bc(LumpPort27)0 statistic
+Excitation bc(LumpPort27)0: Euclidian residual norm = 3.44494e-014
+TIME___________Total/s__________Delta/s
+Real            89.373            1.578
+User           106.078          2.03125
+Syst           2.96875         0.015625
+
+Excitation bc(LumpPort28)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort28)0: Euclidian residual norm = 1.57908e-013
+
+Solution of Excitation bc(LumpPort28)0 statistic
+Excitation bc(LumpPort28)0: Euclidian residual norm = 1.31772e-014
+TIME___________Total/s__________Delta/s
+Real            91.092            1.719
+User           108.141           2.0625
+Syst           3.01563         0.046875
+
+Excitation bc(LumpPort29)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort29)0: Euclidian residual norm = 6.06243e-013
+
+Solution of Excitation bc(LumpPort29)0 statistic
+Excitation bc(LumpPort29)0: Euclidian residual norm = 5.05902e-014
+TIME___________Total/s__________Delta/s
+Real            92.685            1.593
+User           110.156          2.01563
+Syst             3.125         0.109375
+
+Excitation bc(LumpPort30)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort30)0: Euclidian residual norm = 1.41542e-013
+
+Solution of Excitation bc(LumpPort30)0 statistic
+Excitation bc(LumpPort30)0: Euclidian residual norm = 1.18115e-014
+TIME___________Total/s__________Delta/s
+Real             94.31            1.625
+User            112.25          2.09375
+Syst           3.20313         0.078125
+
+Excitation bc(LumpPort31)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort31)0: Euclidian residual norm = 5.30014e-013
+
+Solution of Excitation bc(LumpPort31)0 statistic
+Excitation bc(LumpPort31)0: Euclidian residual norm = 4.4229e-014
+TIME___________Total/s__________Delta/s
+Real            95.951            1.641
+User           114.297          2.04688
+Syst           3.26563           0.0625
+
+Excitation bc(LumpPort32)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort32)0: Euclidian residual norm = 6.93599e-013
+
+Solution of Excitation bc(LumpPort32)0 statistic
+Excitation bc(LumpPort32)0: Euclidian residual norm = 5.788e-014
+TIME___________Total/s__________Delta/s
+Real            97.545            1.594
+User           116.297                2
+Syst           3.34375         0.078125
+
+Excitation bc(LumpPort33)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort33)0: Euclidian residual norm = 2.52418e-013
+
+Solution of Excitation bc(LumpPort33)0 statistic
+Excitation bc(LumpPort33)0: Euclidian residual norm = 2.10639e-014
+TIME___________Total/s__________Delta/s
+Real            99.263            1.718
+User           118.297                2
+Syst           3.45313         0.109375
+
+Excitation bc(LumpPort34)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort34)0: Euclidian residual norm = 7.59371e-013
+
+Solution of Excitation bc(LumpPort34)0 statistic
+Excitation bc(LumpPort34)0: Euclidian residual norm = 6.33686e-014
+TIME___________Total/s__________Delta/s
+Real           100.857            1.594
+User           120.313          2.01563
+Syst           3.48438          0.03125
+
+Excitation bc(LumpPort35)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort35)0: Euclidian residual norm = 8.94962e-013
+
+Solution of Excitation bc(LumpPort35)0 statistic
+Excitation bc(LumpPort35)0: Euclidian residual norm = 7.46835e-014
+TIME___________Total/s__________Delta/s
+Real           102.466            1.609
+User           122.359          2.04688
+Syst           3.54688           0.0625
+
+Excitation bc(LumpPort36)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort36)0: Euclidian residual norm = 3.07173e-013
+
+Solution of Excitation bc(LumpPort36)0 statistic
+Excitation bc(LumpPort36)0: Euclidian residual norm = 2.56332e-014
+TIME___________Total/s__________Delta/s
+Real            104.06            1.594
+User           124.375          2.01563
+Syst             3.625         0.078125
+
+Excitation bc(LumpPort37)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort37)0: Euclidian residual norm = 1.84551e-013
+
+Solution of Excitation bc(LumpPort37)0 statistic
+Excitation bc(LumpPort37)0: Euclidian residual norm = 1.54005e-014
+TIME___________Total/s__________Delta/s
+Real           105.779            1.719
+User           126.453          2.07813
+Syst           3.70313         0.078125
+
+Excitation bc(LumpPort38)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort38)0: Euclidian residual norm = 9.74157e-014
+
+Solution of Excitation bc(LumpPort38)0 statistic
+Excitation bc(LumpPort38)0: Euclidian residual norm = 8.12921e-015
+TIME___________Total/s__________Delta/s
+Real           107.357            1.578
+User             128.5          2.04688
+Syst           3.71875         0.015625
+
+Excitation bc(LumpPort39)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort39)0: Euclidian residual norm = 2.63266e-013
+
+Solution of Excitation bc(LumpPort39)0 statistic
+Excitation bc(LumpPort39)0: Euclidian residual norm = 2.19693e-014
+TIME___________Total/s__________Delta/s
+Real            109.31            1.953
+User           130.828          2.32813
+Syst           3.78125           0.0625
+
+Excitation bc(LumpPort40)0: Euclidian r.h.s. norm   = 11.9834
+Excitation bc(LumpPort40)0: Euclidian residual norm = 6.33826e-013
+
+Solution of Excitation bc(LumpPort40)0 statistic
+Excitation bc(LumpPort40)0: Euclidian residual norm = 5.2892e-014
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             4.109            4.109
+User             3.625            3.625
+Syst          0.140625         0.140625
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 1
+SOLID Box25 h = 0 p = 1
+SOLID Box9 h = 0 p = 1
+SOLID Part15 h = 0 p = 1
+SOLID Part16 h = 0 p = 1
+SOLID Part37 h = 0 p = 1
+SOLID Part38 h = 0 p = 1
+SOLID Part39 h = 0 p = 1
+SOLID Part40 h = 0 p = 1
+SOLID Part41 h = 0 p = 1
+/************************** Time for Refinement ******************************/
+TIME___________Total/s__________Delta/s
+Real             5.796            1.687
+User             5.125              1.5
+Syst          0.203125           0.0625
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 188757
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             7.921            1.031
+User           7.07813         0.984375
+Syst          0.265625          0.03125
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            18.202           10.281
+User           16.9531            9.875
+Syst           0.28125         0.015625
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            23.358            5.156
+User           21.8125          4.85938
+Syst          0.484375         0.203125
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            24.937            1.579
+User           23.2344          1.42188
+Syst             0.625         0.140625
+time for the rest
+TIME___________Total/s__________Delta/s
+Real             26.89            1.953
+User           25.1406          1.90625
+Syst           0.65625          0.03125
+Start solving 
+TIME___________Total/s__________Delta/s
+Real            44.952           39.156
+User           48.9531          43.8281
+Syst             1.125         0.921875
+TIME___________Total/s__________Delta/s
+Real            46.342             1.39
+User            50.625          1.67188
+Syst           1.15625          0.03125
+
+Excitation excitation: Euclidian r.h.s. norm   = 75.7897
+Excitation excitation: Euclidian residual norm = 2.93512e-012
+
+Solution of Excitation excitation statistic
+Excitation excitation: Euclidian residual norm = 3.87271e-014
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.999            3.999
+User           3.59375          3.59375
+Syst             0.125            0.125
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 1
+SOLID Box25 h = 0 p = 1
+SOLID Box9 h = 0 p = 1
+SOLID Part15 h = 0 p = 1
+SOLID Part16 h = 0 p = 1
+SOLID Part37 h = 0 p = 1
+SOLID Part38 h = 0 p = 1
+SOLID Part39 h = 0 p = 1
+SOLID Part40 h = 0 p = 1
+SOLID Part41 h = 0 p = 1
+/************************** Time for Refinement ******************************/
+TIME___________Total/s__________Delta/s
+Real             5.577            1.578
+User           5.01563          1.42188
+Syst           0.15625          0.03125
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 164510
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             7.624            0.984
+User           6.78125            0.875
+Syst          0.296875         0.078125
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            11.108            3.484
+User           10.0625          3.28125
+Syst           0.34375         0.046875
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            15.665            4.557
+User           14.2969          4.23438
+Syst          0.515625         0.171875
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            16.446            0.781
+User           15.0313         0.734375
+Syst          0.515625                0
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            16.556             0.11
+User           15.1406         0.109375
+Syst          0.515625                0
+Start solving 
+TIME___________Total/s__________Delta/s
+Real            27.805           22.228
+User           30.8281          25.8125
+Syst           1.09375           0.9375
+TIME___________Total/s__________Delta/s
+Real            29.055             1.25
+User           32.5156           1.6875
+Syst           1.10938         0.015625
+
+Excitation excitation: Euclidian r.h.s. norm   = 299620
+Excitation excitation: Euclidian residual norm = 3.57748e-010
+
+Solution of Excitation excitation statistic
+Excitation excitation: Euclidian residual norm = 1.194e-015
+
+done
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.968            3.953
+User               3.5              3.5
+Syst          0.203125         0.203125
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             4.062            4.031
+User           3.53125          3.53125
+Syst          0.078125         0.078125
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 1
+SOLID Box25 h = 0 p = 1
+SOLID Box9 h = 0 p = 1
+SOLID Part15 h = 0 p = 1
+SOLID Part16 h = 0 p = 1
+SOLID Part37 h = 0 p = 1
+SOLID Part38 h = 0 p = 1
+SOLID Part39 h = 0 p = 1
+SOLID Part40 h = 0 p = 1
+SOLID Part41 h = 0 p = 1
+/************************** Time for Refinement ******************************/
+TIME___________Total/s__________Delta/s
+Real              5.64            1.578
+User           4.98438          1.45313
+Syst             0.125         0.046875
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 164510
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             7.781            0.985
+User           6.89063         0.953125
+Syst          0.203125          0.03125
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            11.234            3.453
+User           10.2344          3.34375
+Syst          0.203125                0
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            15.734              4.5
+User           14.2813          4.04688
+Syst          0.640625           0.4375
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            16.499            0.765
+User                15          0.71875
+Syst            0.6875         0.046875
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            16.609             0.11
+User           15.0938          0.09375
+Syst            0.6875                0
+Start solving 
+TIME___________Total/s__________Delta/s
+Real            28.015           22.375
+User           30.7188          25.7344
+Syst             1.375             1.25
+TIME___________Total/s__________Delta/s
+Real            29.233            1.218
+User           32.3438            1.625
+Syst           1.39063         0.015625
+
+Excitation excitation: Euclidian r.h.s. norm   = 299620
+Excitation excitation: Euclidian residual norm = 1.33946e-008
+
+Solution of Excitation excitation statistic
+Excitation excitation: Euclidian residual norm = 4.47054e-014
+
+done
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.874            3.874
+User           3.54688          3.54688
+Syst           0.21875          0.21875
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 0
+SOLID Box25 h = 0 p = 0
+SOLID Box9 h = 0 p = 0
+SOLID Part15 h = 0 p = 0
+SOLID Part16 h = 0 p = 0
+SOLID Part37 h = 0 p = 0
+SOLID Part38 h = 0 p = 0
+SOLID Part39 h = 0 p = 0
+SOLID Part40 h = 0 p = 0
+SOLID Part41 h = 0 p = 0
+/************************** Time for Refinement ******************************/
+TIME___________Total/s__________Delta/s
+Real             5.515            1.641
+User           5.01563          1.46875
+Syst          0.265625         0.046875
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 188757
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real              7.64            1.016
+User            7.0625                1
+Syst          0.328125         0.015625
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            17.687           10.047
+User                17           9.9375
+Syst          0.328125                0
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            22.858            5.171
+User           21.7813          4.78125
+Syst            0.6875         0.359375
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real             24.39            1.532
+User           23.2813              1.5
+Syst          0.703125         0.015625
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            26.421            2.031
+User           25.2031          1.92188
+Syst           0.71875         0.015625
+Start solving 
+TIME___________Total/s__________Delta/s
+Real            44.514           39.015
+User           48.9688          43.9531
+Syst           1.45313           1.1875
+TIME___________Total/s__________Delta/s
+Real            46.202            1.688
+User           50.9688                2
+Syst           1.54688          0.09375
+
+Excitation excitation: Euclidian r.h.s. norm   = 75.7897
+Excitation excitation: Euclidian residual norm = 2.58056e-010
+
+Solution of Excitation excitation statistic
+Excitation excitation: Euclidian residual norm = 3.4049e-012
+COMPUTERNAME         = LTE-S03
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 1
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 2.35e+009
+COMPUTERNAME         = LTE-S03
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 1
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-S03
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 1
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-S03
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 1
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-S03
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 1
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+COMPUTERNAME         = LTE-S03
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 1
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             4.765            4.765
+User           4.64063          4.64063
+Syst           0.09375          0.09375
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 0
+SOLID Box25 h = 0 p = 0
+SOLID Box9 h = 0 p = 0
+SOLID Part15 h = 0 p = 0
+SOLID Part16 h = 0 p = 0
+SOLID Part37 h = 0 p = 0
+SOLID Part38 h = 0 p = 0
+SOLID Part39 h = 0 p = 0
+SOLID Part40 h = 0 p = 0
+SOLID Part41 h = 0 p = 0
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 188757
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             9.859            1.391
+User           9.40625          1.35938
+Syst           0.21875          0.03125
+uncompressed matrix dimension = 188757
+time for assembling
+TIME___________Total/s__________Delta/s
+Real            28.421           18.562
+User           25.4688          16.0625
+Syst           2.67188          2.45313
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            35.078            6.657
+User           31.9219          6.45313
+Syst             2.875         0.203125
+compressed matrix dimension = 186237
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            37.031            1.953
+User           33.8594           1.9375
+Syst           2.89063         0.015625
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            39.703            2.672
+User           36.4688          2.60938
+Syst           2.90625         0.015625
+COMPUTERNAME         = LTE-W16
+NUMBER_OF_PROCESSORS = 2
+OMP_NUM_THREADS      = 2
+
+
+
+//*******************************************************************************
+project name TaperedSlotAntennaArray frequency 3e+009
+/******************************** Time for IO ********************************/
+TIME___________Total/s__________Delta/s
+Real             3.966            3.963
+User           3.59375          3.59375
+Syst          0.203125           0.1875
+Refine with version V0
+SOLID Box61 h = 0 p = 1
+SOLID Box62 h = 0 p = 1
+SOLID Part17 h = 0 p = 1
+SOLID Part18 h = 0 p = 1
+SOLID Part42 h = 0 p = 1
+SOLID Part43 h = 0 p = 1
+SOLID Part44 h = 0 p = 1
+SOLID Part45 h = 0 p = 1
+SOLID Box18 h = 0 p = 1
+SOLID Box26 h = 0 p = 1
+SOLID Box2_1_2_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_1_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_2 h = 0 p = 1
+SOLID Box2_1_2_1_1_2_1 h = 0 p = 1
+SOLID Box2_1_2_1_1_4 h = 0 p = 1
+SOLID Box41 h = 0 p = 1
+SOLID Box45 h = 0 p = 1
+SOLID Box49 h = 0 p = 1
+SOLID Box53 h = 0 p = 1
+SOLID Part1 h = 0 p = 1
+SOLID Part10 h = 0 p = 1
+SOLID Part12 h = 0 p = 1
+SOLID Part14 h = 0 p = 1
+SOLID Part19 h = 0 p = 1
+SOLID Part20 h = 0 p = 1
+SOLID Part21 h = 0 p = 1
+SOLID Part22 h = 0 p = 1
+SOLID Part23 h = 0 p = 1
+SOLID Part24 h = 0 p = 1
+SOLID Part25 h = 0 p = 1
+SOLID Part26 h = 0 p = 1
+SOLID Part27 h = 0 p = 1
+SOLID Part28 h = 0 p = 1
+SOLID Part29 h = 0 p = 1
+SOLID Part3 h = 0 p = 1
+SOLID Part30 h = 0 p = 1
+SOLID Part31 h = 0 p = 1
+SOLID Part32 h = 0 p = 1
+SOLID Part33 h = 0 p = 1
+SOLID Part34 h = 0 p = 1
+SOLID Part35 h = 0 p = 1
+SOLID Part36 h = 0 p = 1
+SOLID Part4 h = 0 p = 1
+SOLID Part5 h = 0 p = 1
+SOLID Part6 h = 0 p = 1
+SOLID Part8 h = 0 p = 1
+SOLID Part9 h = 0 p = 1
+SOLID Box17 h = 0 p = 0
+SOLID Box25 h = 0 p = 0
+SOLID Box9 h = 0 p = 0
+SOLID Part15 h = 0 p = 0
+SOLID Part16 h = 0 p = 0
+SOLID Part37 h = 0 p = 0
+SOLID Part38 h = 0 p = 0
+SOLID Part39 h = 0 p = 0
+SOLID Part40 h = 0 p = 0
+SOLID Part41 h = 0 p = 0
+/************************** MESH STATISTICS ******************************/
+# pos      = 24259
+# nodes    = 24259
+# edges    = 166363
+# faces    = 282905
+# elements = 140800
+# raw DoF  = 164510
+
+time for resolution 
+TIME___________Total/s__________Delta/s
+Real             7.634            0.965
+User            6.5625         0.828125
+Syst          0.296875         0.015625
+uncompressed matrix dimension = 164510
+time for assembling
+TIME___________Total/s__________Delta/s
+Real             10.89            3.256
+User           9.82813          3.26563
+Syst          0.296875                0
+time for bc evaluation
+TIME___________Total/s__________Delta/s
+Real            18.653            7.763
+User           16.9219          7.09375
+Syst          0.359375           0.0625
+compressed matrix dimension = 162750
+time for matrix compression
+TIME___________Total/s__________Delta/s
+Real            19.432            0.779
+User            17.625         0.703125
+Syst          0.359375                0
+time for the rest
+TIME___________Total/s__________Delta/s
+Real            19.942             0.51
+User           18.0938          0.46875
+Syst          0.390625          0.03125
+TIME___________Total/s__________Delta/s
+Real           125.895          121.929
+User           56.9219          53.3281
+Syst           7.17188          6.96875
+Computing fields...
+TIME___________Total/s__________Delta/s
+Real           1547.52          1421.63
+User           1384.47          1327.55
+Syst           12.2813          5.10938
+
+done

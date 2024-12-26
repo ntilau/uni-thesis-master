@@ -1,0 +1,9 @@
+{ FILE freespace.mtrl
+{ MATERIAL_PROPERTY freespace
+	3
+	EPSILON_RELATIVE Scal_Real { AR 1 1.0 } 
+	MU_RELATIVE Scal_Real { AR 1 1.0 } 
+	SIGMA Scal_Real { AR 1 0.0 } 
+}
+}
+

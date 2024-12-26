@@ -1,0 +1,165 @@
+FACE PerfE3 PEC
+FACE PerfE4 PEC  
+FACE PerfE5 PEC  
+FACE PerfE6 PEC  
+FACE PerfE7 PEC  
+FACE PerfE8 PEC  
+FACE PerfE9 PEC  
+FACE PerfE10 PEC  
+FACE PerfE11 PEC  
+FACE PerfE12 PEC  
+FACE PerfE13 PEC  
+FACE PerfE14 PEC  
+FACE PerfE15 PEC  
+FACE PerfE16 PEC  
+FACE PerfE17 PEC  
+FACE PerfE18 PEC  
+FACE PerfE19 PEC  
+FACE PerfE20 PEC  
+FACE PerfE21 PEC  
+FACE PerfE22 PEC  
+FACE PerfE23 PEC  
+FACE PerfE24 PEC  
+FACE PerfE25 PEC  
+FACE PerfE26 PEC  
+FACE PerfE27 PEC  
+FACE PerfE28 PEC  
+FACE PerfE29 PEC  
+FACE PerfE30 PEC  
+FACE PerfE31 PEC  
+FACE PerfE32 PEC  
+FACE PerfE33 PEC  
+
+FACE Rad1 Radiation
+
+FACE LumpPort1 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort2 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort3 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort4 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort5 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort6 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort7 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort8 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort9 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort10 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort11 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort12 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort13 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort14 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort15 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort16 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort17 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort18 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort19 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort20 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort21 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort22 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort23 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort24 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort25 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort26 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort27 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort28 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort29 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort30 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort31 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort32 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort33 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort34 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort35 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort36 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort37 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort38 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort39 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+FACE LumpPort40 TRANSFINITE_BC_ANALYTIC  AnalyticPlaneWG_Mode 
+		DirX { AR 3 0.0 0.0 -1.0 } 
+		Resistance 81 (1,0)  
+
+SOLID Box17 PEC
+SOLID Box25 PEC
+SOLID Box9 PEC
+SOLID Part15 PEC
+SOLID Part16 PEC
+SOLID Part37 PEC
+SOLID Part38 PEC
+SOLID Part39 PEC
+SOLID Part40 PEC
+SOLID Part41 PEC
