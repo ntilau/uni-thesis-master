@@ -1,0 +1,487 @@
+\graphicspath{{img/ch2/}}
+\cleardoublepage
+\chapter{Low-Rank Approximations for Fields Transformations} \label{chap:LRA}
+
+\par In this chapter we present the approximation techniques that have been applied on the scalar near field, in order to find suitable spanning spaces for the beam steering operation, and on the scalar near field to far field process to achieve a parameterized radiation model. We recall that what we are seeking for is an adequate approximation method, with controllable accuracy, in order to apply it to a full FEM model of a phased array.
+\par We will first begin with a \itt{Singular Value Decomposition} (SVD) based technique that will be applied on the near fields in order to define the possible number of unknowns of a reduced model. Then a \itt{polynomial interpolation} and a \itt{Discrete Fourier Transform} (DFT) based technique, the \itt{DFT-truncation}, will be tested on the near field to far field operator, seeking for basis functions to express the N2F process. The accuracy of these techniques will be given in terms of error induced to the pattern, relatively to the non approximated N2F pattern and to the directly computed pattern.
+
+%
+
+
+\section{Approximations of the near field}
+
+\par To introduce the SVD, we first discuss on the \itt{Proper Orthogonal Decomposition} (POD), for which the SVD is the discrete case. The POD is a powerful and elegant method of data analysis aimed of obtaining low-dimensional approximate descriptions of high dimensional processes. The POD is often used to extract \itt{mode shapes} or basis functions, from experimental data or detailed simulations of high-dimensional systems, for subsequent use in \itt{Petrov-Galerkin projections} \cite{ThomeeGFEMP} that yield low dimensional dynamical models \cite{ChatterjeeIPOD}.
+
+\subsection{Proper orthogonal decomposition} \label{sec:POD}
+
+\par Let $z(\mbfit{r}) \in \mathbb{C}$ be a function of the position vector $\mbfit{r} \in \mathbb{R}^3$ over the domain of interest $S \subset \mathbb{R}^3$. Now, suppose we wish to approximate the function $z(\mbfit{r})$ as a finite sum
+\begin{eqnarray}
+z(\mbfit{r}) &= & \sum_{m=1}^{M} a_m \phi_m(\mbfit{r}), \qquad a_m, \ \phi_m(\mbfit{r}) \in \mathbb{C},\label{eq:approxSumPOD}
+\end{eqnarray} with the reasonable expectation that the approximation becomes exact in the limit as $M \rightarrow \infty$, except possibly on a set of measure zero \cite{HalmosMT}. The representation \eqref{eq:approxSumPOD} of the function $z(\mbfit{r})$ is not unique. If the domain of $\mbfit{r}$ is a bounded interval $S$, then the functions $\phi_m(\mbfit{r})$ can be chosen as a Fourier series, or Legendre polynomials, or Chebyshev polynomials, and so on. For each such choice of a sequence $\phi_m(\mbfit{r})$ that forms a basis for some suitable class of functions $z(\mbfit{r})$, assuming these functions bounded and integrable, the sequence of coefficients\footnote{We have supposed our function $z(\mbfit{r})$ to be time independent, as we are interested in the approximation of fields in a frequency domain formulation. However, if we had $z(\mbfit{r},t)$ with $t$ the time variable, the coefficients $a_m$ would become functions $a_m(t)$ to hold the time dependence.} $a_m$ is different. The POD is concerned with one possible choice of the functions $\phi_m(\mbfit{r})$. If we have chosen orthonormal basis functions, i.e.
+\begin{eqnarray}
+\label{eq:eigen}
+\oint_S \phi_m^{\dagger}(\mbfit{r'}) \phi_n(\mbfit{r'}) \ dS' & = & \delta_{mn},
+\end{eqnarray}
+where $\delta_{mn} = 1 \ \ \mrm{if} \ m = n, \ 0 \ \ \mrm{otherwise}$ is the \itt{Kronecker's delta}, then 
+\begin{eqnarray}
+\label{eq:Testing}
+a_m &= &  \oint_S \phi_m^{\dagger}(\mbfit{r'}) z(\mbfit{r'}) \ dS',
+\end{eqnarray}
+that is the coefficient $a_m$ depends only on the related function $\phi_m(\mbfit{r'})$ and not on the others. By the integral \eqref{eq:Testing}, the function $z(\mbfit{r'})$ is said to be \itt{tested} by the function $\phi_m(\mbfit{r'})$, operation after which we derive a \itt{weighting} coefficient $a_m$ of $\phi_m(\mbfit{r'})$ for the approximating sum \eqref{eq:approxSumPOD}. The sum \eqref{eq:approxSumPOD} is the POD of $z(\mbfit{r})$ if the orthonormal functions are ordered such that the best approximant $\phi_m(\mbfit{r})$ of $z(\mbfit{r})$ have lower indices, that is, as $M$ grows $\rightarrow \infty$, the series \eqref{eq:approxSumPOD} converges monotonically to $z(\mbfit{r})$ in a \itt{least squares sense} ($\mcal{L}^2$ norm error),
+
+\subsection{Singular value decomposition} \label{sec:SVD}
+
+\par As said before, the SVD is the discrete case of the POD. We proceed with the definition of the SVD. \cite{TrefethenBauNLA, AntoulasALSDS}
+
+\begin{mydef}
+\label{def:SVD}
+Consider $\mat{A} \in \mathbb{C}^{m \times n}$, $m \geq n$. The triple factorization $\mat{A} =: \mat{\mat{U}} \mat{\Sigma} \mat{V}^H$, $\mat{V}^H$ being the conjugate transpose $\mat{V}$, is called singular value decomposition (in the reduced form) of $\mat{A}$ if $ \mat{U} \in \mathbb{C}^{m \times n}, \ \ \mat{V} \in \mathbb{C}^{n \times n}, \ \
+\mat{\Sigma} \in \mathbb{R}^{n \times n}$ are such that $\mat{U}^H \mat{U} = \mat{V}^H \mat{V} = \mat{V} \mat{V}^H = \mat{I}_n$, $\mat{I}_n$ being the \itt{identity} matrix, and $\mat{\Sigma} = \mrm{diag}(\sigma_1, \ldots, \sigma_n)$.
+\par The matrix $\mat{U}$ consists of $n$ orthonormal eigenvectors associated with the $n$ largest eigenvalues of $\mat{A} \mat{A}^H$, and the matrix $\mat{V}$ consists of the orthonormal eigenvectors of $\mat{A}^H \mat{A}$. The columns of $\mat{U}$ are called the left singular vectors, the columns of $\mat{V}$ are called the right singular vectors. The diagonal elements of $\mat{\Sigma}$ are the nonnegative square roots of the eigenvalues of $\mat{A}^H \mat{A}$ and they are called singular values. We shall assume that $\sigma_1 \geq \sigma_2 \geq \ldots \geq \sigma_n \geq 0$. Thus if $\mrm{rank}(\mat{A}) = r$, $\sigma_{r+1} = \sigma_{r+2} = \ldots = \sigma_n = 0$. In other terms, 
+\begin{eqnarray*}
+\mat{U} = [ \mat{U}_1 \mat{U}_2 ], \qquad \mat{\Sigma} = \left ( \begin{array}{c c} \mat{\Sigma}_1 & 0 \\ 0 & \mat{\Sigma}_2 \end{array} \right ) \in \mathbb{R}^{n \times n}, \qquad \mat{V} = [ \mat{V}_1 \mat{V}_2 ] \\
+\mat{\Sigma}_1 = \left ( \begin{array}{c c c} \sigma_1 & & \\ & \ddots & \\ & & \sigma_r  \end{array} \right ), \qquad \mat{\Sigma}_2 = \mat{0} \in \mathbb{R}^{n-r \times n-r} \\
+\mat{U}_1 \in \mathbb{C}^{m \times r}, \mat{U}_2 = \mat{0} \in \mathbb{C}^{m \times n-r}, \qquad \mat{V}_1 \in \mathbb{C}^{r \times n}, \mat{V}_2 = \mat{0} \in \mathbb{C}^{n-r \times n}
+\end{eqnarray*}
+\end{mydef}
+
+\par As a consequence of definition \ref{def:SVD}, the following relations on four fundamental spaces of $\mat{A}$ hold
+\begin{eqnarray}
+\label{eq:SVDspacesProperties}
+\colspan{\mat{A}} &= & \colspan{\mat{U}_1}, \nonumber \\
+\colspan{\mat{A}^H} &= & \colspan{\mat{V}_1}, \nonumber\\
+\kernel{\mat{A}} &= & \colspan{\mat{V}_2}, \nonumber \\
+\kernel{\mat{A}^H} &= & \colspan{\mat{U}_2}.
+\end{eqnarray} where \itt{colsp} is the space spanned by the column vectors of a matrix, that is the \itt{range}, and \itt{ker} is the \itt{kernel} or \itt{null space} of a matrix. \cite{TrefethenBauNLA}
+
+\par By analogy with the POD previously presented, the left singular vectors $\mat{U}$ correspond to the orthonormal basis functions $\phi_m(\mbfit{r})$. These singular vectors actually constitute a space of \itt{testing vectors} for matrices spanned by the same range of $\mat A$ that provides the coefficients of an expansion in terms of vectors $\mat{U}$ (the \itt{trial} vectors which in this case are the same as the testing vectors). The coefficients $a_m$ can be viewed as the testing matrix multiplication $\mat{U}^H \mat{A} = \mat{K}$, $\mat{K} \in \mathbb{C}^{m \times n}$ being a matrix of coefficients that weights the basis $\mat{U}$. In other terms, if $\rank{\mat{A}} = r$ we can build a matrix $\mat{\Pi} = \mat{U} \mat{U}^H \in \mathbb{C}^{m \times m}$, an \itt{orthogonal projection} \cite{SaadIMSLS} of any matrix onto the $r$ dimensional subspace spanned by the columns of $\mat{U}$ ($\colspan{\mat{A}}$) and along the kernel of $\mat{U}^H$ (left singular vectors associated to null singular values, that is $\kernel{\mat{A}^H}$).
+
+\par Another interesting issue of the SVD is the fact that the singular vectors are ordered in function of their importance in the representation of the matrix $\mat{A}$, the singular values being ordered monotonically in a decreasing order. We can thus select $q \leq r$ left singular vectors, associated to the first $q$ singular values, to build a projector $\mat{\Pi}_q \in \mathbb{C}^{m \times m}$ and $\rank{\mat{\Pi}_q} = q$ such that $\tilde{\mat{A}}_q = \mat{\Pi}_q \mat{A}$ is a $q^{th}$ order \itt{low-rank approximation} of the matrix $\mat{A}$, achieved by a projection technique. By analogy with the POD, $q$ corresponds to the degree of approximation $M$. Furthermore, the following important theorem on the approximation holds \cite{TrefethenBauNLA}
+\begin{mythm} \label{th:SVDerror}
+Let $\mat{A} \in \mathbb{C}^{m \times n}$, $m \geq n$ be a matrix with singular value decomposition $\mat{U} \mat{\Sigma} \mat{V}^H$.
+For any $q : \ \ 0 \leq q \leq r $, $\mat{A}_q = \sum_{j=1}^{r} \sigma_j \vect{U}_j \vect{V}_j^{\dagger}$, $\vect{U}_j, \vect{V}_j$ column vectors. If $q = \mrm{min}(m,n) = \rank{\mat{A}} = r$, $\sigma_{q+1} = 0$. Then
+\begin{eqnarray*}
+\| \mat{A} - \mat{A}_q \|_2 = \begin{array}[t]{c} \mrm{inf} \\[-12pt] \scriptstyle {\mat{B} \in \mathbb{C}^{m \times n}} \\[-14pt] \scriptstyle {\rank{\mat{B}}} \leq q \end{array} \!\! \| \mat{A} - \mat{B} \|_2 = \sigma_{q+1}.
+\end{eqnarray*}
+\end{mythm}
+
+\par Theorem \ref{th:SVDerror} states that we can compute the error for the approximation and that the approximation is optimal with respect to the spectral norm\footnote{ Natural norm induced by the $\mcal{L}^2$ norm : $ \| \mat{A} \|_2 = \begin{array}[t]{c} \mrm{sup} \\[-4pt] \scriptstyle {\|\vect{x}\|_2 \neq 0} \end{array} \! \! \frac{\|\mat{A}\vect{x}\|_2}{\|\vect{x}\|_2}$.}.
+
+\subsection{Space spanned by the scanned near field} \label{sec:approxNF}
+
+\par Along a beam steering process, the dimension of the \itt{scan angle space} that can hold all the configurations of the near field is \itt{a priori} unknown. The SVD comes out helping us to find it. We may first collect some \itt{pictures} of the near field behavior for some scan angles $(\theta_x,\theta_y)$ (see section \ref{sec:NumImp}) to build our space. In other words, the near field sampled values for each $n$ scan angle chosen will constitute spanning vectors $\vect{\psi}_n$ such that $\mat{A}_\theta = \spanning{ {\ \bigcup_{n=1}^{N} \vect{\psi}_n}}$. The rank will be checked performing an SVD on $\mat{A}_\theta = \mat{U}_\theta \mat{\Sigma}_\theta \mat{V}^H_\theta $ and looking at the singular values to derive informations on the importance of the vectors collected. Relying on definition \ref{def:SVD}, the singular values of $\mat{A}_\theta$ become null as soon as the number of spanning vectors $N$ supersedes the rank of the scan angle space, expressing in such a way its dimension.
+
+\par The choice of the scan angles $(\theta_x,\theta_y)$ is arbitrary, and we also don't know \itt{a priori} which sequence may lead to a rapid convergence into the full rank scan angle space. In a first attempt, we choose the broadside direction, obtaining the vector $\mat{\psi}_{(0\°,0\°)}$. Then, limiting the scanning operation in the $x$ direction, we select the end fire steering angle in that direction. Thus, we have the new spanning vector $\mat{\psi}_{(90\°,0\°)}$. The next vectors will be chosen in between of $(0\°,0\°)$ and $(90\°,0\°)$, halving iteratively the steering intervals inserting a new vector in the middle. We obtain the sequence $\mat{\psi}_{(0\°,0\°)}, \mat{\psi}_{(90\°,0\°)}, \mat{\psi}_{(45\°,0\°)}, \mat{\psi}_{(22.5\°,0\°)}, \mat{\psi}_{(67.5\°,0\°)}, \mat{\psi}_{(11.25\°,0\°)}, \dots$ and so on, until we achieve the sought full rank space. Notice that, considering the set of equally spaced scan angles, this is an exponential growth of the spanning space of the kind $ \mrm{dim}(\mat{A}_\theta) = \lfloor 2^{n-1} \rfloor + 1, \ n = 0,1,2,\ldots$, and we will call this sequence \itt{exponential scan angle selection}.
+
+\par As we are building the space increasing progressively the number of spanning vectors, we may test the basis completeness applying the projector resulting from the left singular vectors onto a picture of the near fields that is not contained in the vectors that spans $\mat{A}_\theta$ (otherwise we have exact approximation). We have arbitrarily chosen the scan angle (23.3251\°,0\°), and the fields are produced on an enclosing sphere by an array of 17 by 1 point sources (as we are scanning along $\theta_x$, a linear array can be used to achieve faster computations), varying the spacing between the point sources. Figures \ref{fig:SVDerrorExp_33_0,25}-\ref{fig:SVDerrorExp_33_1,25} show the error (see chapter \ref{chap:N2F}), while increasing the dimension of the spanning space, on the near field $$\varepsilonup_{\mrm{Near \ [\nicefrac{\lambda}{10}] \ - \  Near \ approx}  \ [\nicefrac{\lambda}{10}]} = \frac{\|\tilde{\psi}_{r' \ \mrm{Near}} - \tilde{\psi}_{r' \ \mrm{Near \ approx}} \|_2}{\| \tilde{\psi}_{r' \ \mrm{Near}} \|_2},$$ the N2F far field detectors computed from the approximated and non approximated near fields $$\varepsilonup_{\mrm{N2F}  \ [\nicefrac{\lambda}{10}] \ - \ \mrm{N2F \ approx}  \ [\nicefrac{\lambda}{10}]} = \frac{\|\tilde{\psi}_{r \ \mrm{N2F}}^* - \tilde{\psi}_{r \ \mrm{N2F \ approx}}^* \|_2}{\| \tilde{\psi}_{r \ \mrm{N2F}}^* \|_2},$$ and, similarly, relatively to the direct far field $$\varepsilonup_{\mrm{Direct \ - \ N2F \ approx}  \ [\nicefrac{\lambda}{10}]} = \frac{\|\tilde{\psi}_{r \ \mrm{Direct}}^* - \tilde{\psi}_{r \ \mrm{N2F \ approx}}^* \|_2}{\| \tilde{\psi}_{r \ \mrm{Direct}}^* \|_2}.$$ %Notice that, as we have chosen an exponential scan angles selection, the error is computed only once all the selected angles are equidistant in the beam steering range.
+\begin{figure}[hbpt!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExp_33_0,25} 
+\caption{Error plot relative to the number of vectors $\mat{\psi}_{(\theta_x\°,0\°)}$ used in the scan angle space (left) and singular values related to the scan angle space build with 33 vectors (right) for the chosen array of 17 by 1 point sources equally spaced of $\nicefrac{\lambda}{4}$.}
+\label{fig:SVDerrorExp_33_0,25}
+\end{figure}
+\begin{figure}[hbpt!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExp_33_0,5} 
+\caption{Error plot for the chosen array of 17 by 1 point sources equally spaced of $\nicefrac{\lambda}{2}$.}
+\label{fig:SVDerrorExp_33_0,5}
+\end{figure}
+\begin{figure}[hbpt!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExp_33_0,75} 
+\caption{Error plot for the chosen array of 17 by 1 point sources equally spaced of $\nicefrac{3 \ \lambda}{4}$.}
+\label{fig:SVDerrorExp_33_0,75}
+\end{figure}
+\begin{figure}[hbpt!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExp_33_1} 
+\caption{Error plot for the chosen array of 17 by 1 point sources equally spaced of $\lambda$.}
+\label{fig:SVDerrorExp_33_1}
+\end{figure}
+\begin{figure}[hbpt!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExp_33_1,25} 
+\caption{Error plot for the chosen array of 17 by 1 point sources equally spaced of $\nicefrac{5 \ \lambda}{4}$.}
+\label{fig:SVDerrorExp_33_1,25}
+\end{figure}
+\par The practical limit in the spacing between the point sources, in order to avoid the insurgence of \itt{grating lobes} \cite{StutzmanThieleATD}, that is significant constructive directions of the far field different from the desired ones, is of $\approx 0.6 \ \lambda$. However, we have extended that range to illustrate the changes in the singular values. The direct far field relative error is inferiorly limited by the sampling resolution, chosen to be of $\nicefrac{\lambda}{10}$. We can see that the singular values drop below two orders of magnitude over the double precision used ($\approx 10^{-16}$), and we will refer to this low level as the \itt{numerical null threshold} \cite{AntoulasALSDS}, after the $17^\mrm{th}$ singular value, that is the number of point sources disposed along $x$. However, the relative error in the pattern is not always null when spanning with 17 vectors. Thus, relying on definition \ref{def:SVD}, we conclude that:
+\begin{mycc}
+\label{cc:BeamSteering}
+The numerical rank (the rank referred to the chosen numerical null threshold) of the scan angle space, resulting from a beam steering operation along a single direction, equals the number of radiating elements along that direction. Furthermore, the error in the pattern computation depends on the relative spacing between the radiating elements, and within the range that avoids grating lobes, the error grows as the array becomes electrically larger.
+\end{mycc}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExp_17} 
+\caption{Error plot relative to the number of vectors $\mat{\psi}_{(\theta_x\°,0\°)}$ up to 17 (left) and singular values related to the scan angle space built with 17 vectors (right) for an array of 17 by 1 point sources equally spaced of $\nicefrac{\lambda}{2}$.}
+\label{fig:SVDerrorExp_17}
+\end{figure}
+\par Figure \ref{fig:SVDerrorExp_17} illustrates the state of the space spanned by 17 vectors, chosen in the same exponential manner, for a linear array of 17 point sources equally spaced of $\nicefrac{\lambda}{2}$. We notice differences between the singular values related to the space spanned by 17 vectors and the one with 33 vectors (figure \ref{fig:SVDerrorExp_33_0,5}), even if $\mat{A}_\theta \Big |_{17} = \spanning{ {\ \bigcup_{n=1}^{17} \vect{\psi}_n}} \ \subset \ \mat{A}_\theta \Big |_{33} = \spanning{ {\ \bigcup_{n=1}^{33} \vect{\psi}_n}}$. To see how different are the basis on which the near field picture tested is projected, let us compare the performances of a low rank projector of dimension $q$, assuming $r = 17$ as the rank of the scan angle space, when the space built has 17 vectors, 33 vectors and 65 vectors, using the same exponential scan angle selection space such that $\mat{A}_\theta \Big |_{17} = \spanning{ {\ \bigcup_{n=1}^{17} \vect{\psi}_n}} \ \subset \ \mat{A}_\theta \Big |_{33} = \spanning{ {\ \bigcup_{n=1}^{33} \vect{\psi}_n}} \ \subset \ \mat{A}_\theta \Big |_{65} = \spanning{ {\ \bigcup_{n=1}^{65} \vect{\psi}_n}}$ and retaining the first 17 relevant left singular vectors to build the projector.
+\begin{table}[!tbp]
+\centering
+\small
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline & \multicolumn{2}{c|}{17 vectors} & \multicolumn{2}{c|}{33 vectors}  & \multicolumn{2}{c|}{65 vectors} \\ \hline
+\hline $q$ & n.f. error & f.f. error & n.f. error & f.f. error  & n.f. error & f.f. error  \\ \hline
+\hline 17 & $1.963 \ 10^{-12}$ & $3.005 \ 10^{-13}$ & $7.153 \ 10^{-14}$ & $2.948 \ 10^{-13}$ & $6.933 \ 10^{-14}$ & $3.062 \ 10^{-13}$ \\
+\hline 16 & $2.975 \ 10^{-06}$ & $9.877 \ 10^{-06}$ & $1.233 \ 10^{-07}$ & $4.309 \ 10^{-07}$ & $1.536 \ 10^{-06}$ & $5.406 \ 10^{-06}$ \\
+\hline 15 & $2.301 \ 10^{-05}$ & $7.737 \ 10^{-05}$ & $3.008 \ 10^{-05}$ & 0.0001065 & $2.831 \ 10^{-05}$ & 0.0001012 \\
+\hline 14 & 0.0001395 & 0.0004772 & 0.0002284 & 0.0007944 & 0.0002965 & 0.001039 \\
+\hline 13 & 0.0007067 & 0.00248 & 0.001282 & 0.004903 & 0.001119 & 0.004345 \\
+\hline 12 & 0.001066 & 0.00343 & 0.013 & 0.04836 & 0.01246 & 0.0462 \\
+\hline 11 & 0.03508 & 0.1508 & 0.01581 & 0.07227 & 0.01728 & 0.07936 \\
+\hline 10 & 0.2715 & 1.104 & 0.2271 & 0.9225 & 0.2049 & 0.8253 \\
+\hline
+\end{tabular}
+\caption{Error in the near fields (n.f.) approximation of order $q$ and resulting N2F far fields (f.f).}
+\label{tab:truncError}
+\end{table} Table \ref{tab:truncError} shows values of relative errors in the near field and in their N2F patterns. The order is slightly the same for all the cases. However, the space spanned by 17 vectors may allow an truncation order up to 12 vectors, where the N2F error is below our accuracy criterion ($5 \ 10^{-3}$, see section \ref{sec:NumImp}) , while the others would be limited to 13 vectors for the same criterion.
+
+\begin{mycc}
+\label{cc:Truncation}
+Reduction of the order of the near field scan angle space can be applied, depending on the importance of the basis vectors selected, that is on the values of the singular values associated to the left singular vectors retained in the order reduction. Furthermore, no effective improvement is achieved with a projection basis built with a larger number of scan angles selected exponentially.
+\end{mycc}
+
+\begin{figure}[htbp!]
+\centering
+\includegraphics[width=12cm]{SVDerrorLin_17} 
+\caption{Error on the tested angle of 23.3251\° and singular values for 33 vectors selected linearly with $\theta_x = 0\° \to 90\°$ (17 point sources linear array, spacing of $\nicefrac{\lambda}{2}$).}
+\label{fig:SVDerrorLin_17}
+\end{figure}
+\begin{figure}[hbtp!]
+\centering
+\includegraphics[width=12cm]{SVDerrorInvLin_17} 
+\caption{Error on the tested angle of 23.3251\° and singular values for 33 vectors selected linearly with $\theta_x = 90\° \to 0\°$ (17 point sources linear array, spacing of $\nicefrac{\lambda}{2}$).}
+\label{fig:SVDerrorInvLin_17}
+\end{figure} 
+\par To see whether the choice of the spanning angles is important while building $\mat{A}_\theta$, let us try two other sequences: the linear sequences from $\theta_x = 0\° \to 90\°$ and \itt{vice versa}, with a fixed $\Delta \theta_x$. We have chosen up to 33 vectors ($\Delta \theta_x = 2.8125\°$) and the resulting errors are show in figures \ref{fig:SVDerrorLin_17} and \ref{fig:SVDerrorInvLin_17}. In the first case, the tested angle of 23.3251\° become included in the scan angle space interval $[0\°, 25.3125\°]$ with the $10^\mrm{th}$ vector ($\vect{\psi}_{(25.3125\°,0\°)}$), but the error begins its decreasing slope 5 vectors before, and the error becomes numerically null at the $17^\mrm{th}$ vector (size of the array). In the second case, we need to wait until the $25^\mrm{th}$ vector ($\vect{\psi}_{(22.5\°,0\°)}$) to see the error dropping below the numerical noise floor ($< 10^{-13}$). The final 33 vectors, being the same in the two cases, are such that, obviously, we achieve the same singular values. 
+\begin{figure}[!hbtp]
+\begin{minipage}[b]{0.5\linewidth} % A minipage that covers half the page
+\centering
+\includegraphics[width=7cm]{SVDerrorLin_17_10vects}
+\caption{Singular values of the space spanned by 10 vectors in a linear selection of angles from $0\° \to 90\°$.}
+\label{fig:SVDerrorLin_17_10vects}
+\end{minipage}
+\hspace{0.1cm} % To get a little bit of space between the figures
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[width=7cm]{SVDerrorInvLin_17_25vects}
+\caption{Singular values of the space spanned by 25 vectors in a linear selection of angles from $90\° \to 0\°$.}
+\label{fig:SVDerrorInvLin_17_25vects}
+\end{minipage}
+\end{figure}
+Looking at figures \ref{fig:SVDerrorLin_17_10vects} and \ref{fig:SVDerrorInvLin_17_25vects}, respectively, the singular values for the space spanned by only 10 vectors with the first angles selection and those for the space spanned by 25 vectors with the inverse angles selection, we notice that the slope in the singular values begins slightly earlier in the first (about 2 vectors before). This confirms that
+
+\begin{mycc}
+\label{cc:SelectionSpace}
+The selected angles for the near field used in the scan angle space influences the convergence to the full space. Moreover, the projection of a near field picture on that space leads to high error values if the scan angle of the projected picture is not included in the range of the selected scan angles to span the space, independently on whether the number of column vectors has superseded the rank of the space.
+\end{mycc}
+
+\par Let us now check how the error grows while slightly increasing the dimension of the array above 17 point sources and projecting the chosen test vector onto a space spanned by 17 vectors obtained with equally spaced scan angles by an exponential scan angle selection. In order to have the maximum error, the tested angle have been changed to 2.8125\°, that is an angle in the middle of 0\° and 5.625\° for which we have collected the fields to span our scan angle space. The results are shown in figures \ref{fig:SVDerrorExp_18} and \ref{fig:SVDerrorExp_19}.
+
+\begin{figure}[!hbtp]
+\begin{minipage}[b]{0.5\linewidth} % A minipage that covers half the page
+\centering
+\includegraphics[width=7cm]{SVDerrorExp_18}
+\caption{Error plot for an array of 18 point sources, spacing of $\nicefrac{\lambda}{2}$.}
+\label{fig:SVDerrorExp_18}
+\end{minipage}
+\hspace{0.1cm} % To get a little bit of space between the figures
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[width=7cm]{SVDerrorExp_19}
+\caption{Error plot for an array of 19 point sources, spacing of $\nicefrac{\lambda}{2}$.}
+\label{fig:SVDerrorExp_19}
+\end{minipage}
+\end{figure} The number of vectors that can be used as a basis for the fields produced by an array of 18 point sources, for the accuracy chosen of $10^{-3}$, can be of 14. This is true for any test angle in the range $[0\°,90\°]$. In effect, several angles have been tested, remaining in the middle of two spanning angles for the basis. The pattern resulting from a linear array of 21 point sources, steered at $\theta_x = 2.8125\°$ and projected onto a basis of 17 vectors built by an exponential scan angle selection is shown in figure \ref{fig:pattern_21_2,8125_17}.
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=12cm]{pattern_21_2,8125_17} 
+\caption{Pattern of the fields produced by a linear array of 21 point sources steered at 2.8125\° and tested by a 17 vectors basis.}
+\label{fig:pattern_21_2,8125_17}
+\end{figure} As the N2F error, being of 0.01984 (n.f. error = 0.01724), has superseded our accuracy threshold, we can see some misfits on the lateral lobes. However, for practical applications, this can be acceptable. Now testing the pattern steered at $5 \cdot 2.8125\° = 14.0625\°$ (figure \ref{fig:pattern_21_14,0625_17}), we obtain a N2F error of $1.55 \ 10^{-3}$ (n.f. error = $1.342 \ 10^{-3}$). Then for $11 \cdot 2.8125\° = 30.9375\°$ (figure \ref{fig:pattern_21_30,9375_17}) and for $21 \cdot 2.8125\° = 59.0625\°$ (figure \ref{fig:pattern_21_59,0625_17}) we have, respectively, the errors $5.48 \ 10^{-5}$ (n.f. error = $5.042 \ 10^{-5}$) and $1.92 \ 10^{-7}$ (n.f. error = $2.82 \ 10^{-7}$).
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=12cm]{pattern_21_14,0625_17} 
+\caption{Pattern of the fields produced by a linear array of 21 point sources steered at 14.0625\° and tested by a 17 vectors basis.}
+\label{fig:pattern_21_14,0625_17}
+\end{figure}
+
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=12cm]{pattern_21_30,9375_17} 
+\caption{Pattern of the fields produced by a linear array of 21 point sources steered at 30.9375\° and tested by a 17 vectors basis.}
+\label{fig:pattern_21_30,9375_17}
+\end{figure}
+\begin{figure}[htp!]
+\centering
+\includegraphics[width=12cm]{pattern_21_59,0625_17} 
+\caption{Pattern of the fields produced by a linear array of 21 point sources steered at 59.0625\° and tested by a 17 vectors basis.}
+\label{fig:pattern_21_59,0625_17}
+\end{figure}
+We can conclude that, as the near field approximations are more accurate the nearest the tested angle is from the end fire direction (see figure \ref{fig:errorExpAS}),
+\begin{mycc}
+\label{cc:BSEFselectionSpace}
+The near field produced by a beam steering operation around the broadside direction require a higher order basis than the field resulting from a beam steering close to the end fire direction. 
+\end{mycc}
+\begin{figure}[hbtp!]
+\centering
+\includegraphics[width=12cm]{errorExpAS} 
+\caption{Near field error and N2F error resulting from testing field pictures scanned in the middle of 17 exponentially selected scan angle spanning vectors for an array of 21 point sources.}
+\label{fig:errorExpAS}
+\end{figure}
+Thus, we can choose the spanning vectors with higher density of the scanned angles around the broad side direction in order to achieve a constant error (in the average) along the whole scanning range (see figure \ref{fig:errorAvg}).
+\begin{figure}[hbtp!]
+\centering
+\includegraphics[width=12cm]{errorAvg} 
+\caption{Possible correction applied to the selected angles for the spanning space. The gap between the angles is chosen to grow exponentially with base $\approx 1.1$.}
+\label{fig:errorAvg}
+\end{figure}
+
+\par Seeking for further improvements in the space selection, we have performed transformations on the near field pictures before we collect them for $\mat{A}_\theta$. Exploiting the fact that the near field is sampled on a sphere, we have rotated the field around the $y$ axis to let the scan direction go back to the broadside direction.
+
+\begin{figure}[!hbtp]
+\begin{minipage}[b]{0.5\linewidth} % A minipage that covers half the page
+\centering
+\includegraphics[width=7cm]{nfSolid30}
+\caption{Near field solid $|\psi|$ generated by a linear array of 9 point sources on the $x$ direction steered at 30\°.}
+\label{fig:nfSolid30}
+\end{minipage}
+\hspace{0.1cm} % To get a little bit of space between the figures
+\begin{minipage}[b]{0.5\linewidth}
+\centering
+\includegraphics[width=7cm]{nfSolid30rot}
+\caption{Near field solid $|\psi|$ generated by a linear array of 9 point sources on the $x$ direction steered at 30\° rotated 30\° backward.}
+\label{fig:nfSolid30rot}
+\end{minipage}
+\end{figure} The results with rotated field are shown in figure \ref{fig:SVDerrorExpRotated}. In figure \ref{fig:SVDerrorExpRotatedMax} it is shown the results from a rotation in the direction in which the near field is maximal. For this case, it is necessary, in order to have the computed maximal direction to be around the scan angle, to increase the size of the bounding sphere, such that the constructive interference becomes visibly in the scan angle direction (the behavior in the near field is quite different from the one in the far field).
+
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{SVDerrorExpRotated}
+\caption{Error plot for the space spanned by fields rotated to broadside of the scan angle (linear array of 17 point sources).}
+\label{fig:SVDerrorExpRotated}
+\end{figure}
+\begin{figure}[hbtp!]
+\centering
+\includegraphics[width=12cm]{SVDerrorExpRotatedMax}
+\caption{Error plot for the space spanned by fields rotated such that the maximum fields value goes to broadside (linear array of 17 point sources).}
+\label{fig:SVDerrorExpRotatedMax}
+\end{figure}
+
+As we can see, no improvement is achieved in this manner. Even the rank of the space is no more discernible, that is the spanning vectors are still very linearly dependent one from each other, thus cannot constitute a basis for the sought space.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Approximations of the near field to far field operator}
+
+\par The far field detectors presented in chapter \ref{chap:N2F} can be thought as the result of operators \cite{RudinFA, GiaquintaModicaMA} acting on the near field. In the scalar case, we can think of two (integral) operators, the first acting on the scalar near field and the second on its derivative\footnote{In section \ref{sec:NumImp}, the derivatives where computed analytically in order to reduce the numerical errors that would be introduced by a numerical finite-differences-based derivation technique. ~ However, we could have left the radial derivative to be part of the operator, leading into an integro-differential operator.}. In the vector case, six operators act on the components of the equivalent currents or, with some changes in the operators, of the near fields. In this section, we will treat only the scalar field to find an interpolation technique for the N2F operator. However, the techniques that will be presented can be straightforwardly applied to vector fields. The far field detector of equation \eqref{eq:SphereIntNF2FFPattern} becomes, in such an interpretation,
+\begin{eqnarray}
+\label{eq:Operator}
+\tilde{\psi}_r^* (\hat{\mbfit{r}}; \omega) & = &\mathcal{L}_{\psi} \left (\tilde{\psi}(\mbfit{r'}; \omega)  ; \hat{\mbfit{r}} \right ) + \mathcal{L}_{\psi{'}} \left ( \frac{\partial{\tilde{\psi}(\mbfit{r'}; \omega)}}{\partial{r'}}  ; \hat{\mbfit{r}} \right )  \nonumber \\
+& = & \mathcal{L} \left ( \tilde{\psi}(\mbfit{r'}; \omega) , \frac{\partial{\tilde{\psi}(\mbfit{r'}; \omega)}}{\partial{r'}} ; \hat{\mbfit{r}} \right ),
+\end{eqnarray} where $\mathcal{L}$ is a linear\footnote{The surfaces enclosing the sources can be more than one, an the far field detector results in the sum of the application of the operator on each surface.} functional parameterized in the look angle direction $\hat{\mbfit{r}} \in \mathcal{D} \subset \mathbb{R}^3$. In a first approach, we will restrain the look angle domain $\hat{\mbfit{r}} \in \mathcal{D}_{\phi = 0\°} \subset \mathcal{D}$, seeking for an approximation of $\mathcal{L}(\hat{\mbfit{r}})$ along the pattern cut plane XZ ($\phi = 0\°$).
+
+\par The main idea of the interpolation techniques presented below is to construct basis functions with a large informations content in order to reduce the number of basis coefficients needed to reach a certain level of accuracy in the outputs of interest. %In a similar way as does the POD (section \ref{sec:POD}), we seek for the optimal basis to approximate the functional, in order to minimize the number of coefficients required.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Polynomial interpolation of the N2F operator} \label{sec:PolynomN2F}
+
+\par Given $\hat{\mbfit{r}} \in \mathcal{D}_{\phi = 0\°}$, we first introduce parameter samples $\vect{S}_P \equiv \left \{ \hat{\mbfit{r}}_1, \ldots, \hat{\mbfit{r}}_P \right \},$ that is the chosen look angles for pattern plotting, and associated \itt{operator snapshots}  $\mat{L}_P = \colspan{ \vect{\lambdaup}_p \equiv \mathcal{L}(\hat{\mbfit{r}}_p) , 1 \leq p \leq P}.$ The column vector of far field detectors $\vect{\psi}_r^*$ is given by the matrix vector product 
+\begin{eqnarray}
+\label{eq:OperatorMatrixProduct}
+\vect{\psi}_r^* &= & \mat{L}_P^T \vect{\psi}^" 
+\end{eqnarray} where $\vect{\psi}^{"} =  [\vect{\psi}; \vect{\psi}^{'}]$ is the column vector of vertically concatenated near field picture and its radial derivative, and $\mat{L}_P^T$ is the transposed matrix of $\mat{L}_P$. Numerically speaking, $\mat{L}_P$ is constructed modifying \eqref{eq:sphNumPsiN2F} in such a way that the summation becomes performed by the matrix multiplication \eqref{eq:OperatorMatrixProduct}. Thus we compute the values of the column vectors of $\mat{L}_P$ by the following
+\begin{eqnarray}
+\mat{L}_p & = &  \left [ jk  \left ( \hat{\mbfit{r}}_p \cdot \hat{\mbfit{r}}'_m \right ) \frac{\mrm{e}^{jk \hat{\mbfit{r}}_p \cdot \mbfit{r'}_m}}{4\pi} \Delta S_m ;  -  \frac{\mrm{e}^{jk \hat{\mbfit{r}}_p \cdot \mbfit{r'}_m}}{4\pi} \Delta S_m \right ], \nonumber \\
+& & \hspace{1cm} m=1 \ldots M, \  p=1 \ldots P,
+\end{eqnarray} and the concatenated vectors of the field and its radial derivative are
+\begin{eqnarray}
+\vect{\psi}^" & =&  \left [ \tilde{\psi}_m(\mbfit{r'}_m; \omega);  \frac{\partial{\tilde{\psi}_m(\mbfit{r'}_m; \omega)}}{\partial{r'}_m} \right ], \qquad m=1 \ldots M.
+\end{eqnarray}
+
+\par Looking first at the singular values computed from the factorization of $\mat{L}_P$ (figure \ref{fig:operatorSVD}) built for a sphere bounding a linear array of 5 point sources (radius of $\nicefrac{3 \ \lambda}{2}$), we see that the number of basis that may be required, at least for an approximation by projection, is about 48.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=10cm]{operatorSVD}
+\caption{Singular values associated to the SVD of $\mat{L}_P$.}
+\label{fig:operatorSVD}
+\end{figure} This number is sensibly high, as we seek for a method that would be able to handle very large arrays (50 by 50 radiating elements and more). Thus, we proceed with a polynomial interpolation with the attempt to need less basis.
+
+\par We introduce nested parameter samples $\vect{S}_Q \equiv \left \{ \hat{\mbfit{r}}_1, \ldots, \hat{\mbfit{r}}_Q \right \}$ and associated approximation spaces $\mat{L}_Q = \colspan{ \lambdaup_q \equiv \mathcal{L}(\hat{\mbfit{r}}_q) , 1 \leq q \leq Q }$ for $ Q = 1, \ldots, P$. Now, we evaluate  $\mathcal{L}(\hat{\mbfit{r}})$ by the following sum
+\begin{eqnarray}
+\label{eq:LinPolynomials}
+\tilde{\mathcal{L}}(\hat{\mbfit{r}}) & = & \sum_{q=1}^Q \Theta_q (\hat{\mbfit{r}})  \mathcal{L}(\hat{\mbfit{r}}_q),
+\end{eqnarray} where $\Theta_q (\hat{\mbfit{r}})$ is a set of $Q$ polynomial basis functions with compact supports $\mathcal{Q}_q \subset \mathcal{D}_{\phi = 0\°} $ such that $\Theta_m (\hat{\mbfit{r}}_m) \Theta_n (\hat{\mbfit{r}}_n) = 0  \ \mrm{if} \ m \neq n, \ \forall m,n = 1, \ldots, Q$. The affinity of $\mathcal{L}$ in $\hat{\mbfit{r}}$, that is a polynomial dependence in the look angle parameter, is a fundamental requisite for the radiation model order reduction. We actually seek for the best way to express this affinity.
+
+\par Using \itt{piece-wise linear} basis functions ($\mrm{1^{st}}$ order), we assume $\mat{L}_Q$ to be our interpolating nodes, and their influence is limited to the domain $\mathcal{Q}_q \in (\hat{\mbfit{r}}_{q-1}, \hat{\mbfit{r}}_{q+1})$ through \itt{roof-top} shape functions as depicted in figure \ref{fig:1st}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=8cm]{1st}
+\caption{\itt{Roof-top} interpolating functions for the first 3 nodes.}
+\label{fig:1st}
+\end{figure}
+For each node $q$, the roof-top function can be defined as, being $\hat{\mbfit{r}} = \hat{\mbfit{r}} (\theta, \phi=0\°) =  \hat{\mbfit{r}} (\theta) $
+\begin{eqnarray}
+\Theta_q (\hat{\mbfit{r}}) & = & \left \{  \begin{array}{c l}
+\frac{\theta \ - \ \theta_{q-1}}{\theta_q \ - \ \theta_{q-1}}, & \qquad \hat{\mbfit{r}} (\theta_{q-1}) \in \mathcal{D}_{\phi = 0\°}, \hat{\mbfit{r}} (\theta) \in \mathcal{Q}_q,\\
+\frac{\theta_{q+1} \ - \ \theta}{\theta_{q+1} \ - \ \theta_{q}}, & \qquad \hat{\mbfit{r}} (\theta_{q+1}) \in \mathcal{D}_{\phi = 0\°}, \hat{\mbfit{r}} (\theta) \in \mathcal{Q}_q,\\
+0 & \qquad \mrm{otherwise}.
+\end{array} \right.
+\end{eqnarray}
+Numerically speaking, we can build the interpolated operator selecting first in the range of $P$ look angles, $Q$ of them equally spaced one from each other, building the matrix $\mat{L}_Q$ of $Q$ columns. Then we build the matrix $\mat{O}_Q \in \mathbb{R}^{P \times Q}$, which column vectors are the weighting values given by the roof-top functions. Finally, the product of these matrices gives
+\begin{eqnarray}
+\tilde{\mat{L}}_P  = \mat{L}_Q \mat{O}_Q^T \approx \mat{L}_P.
+\end{eqnarray}
+Now, we can compute ${\vect{\psi}_{r}^{*}} {\Big |_{\mrm{1^{st}}}} =  {\tilde{\mat{L}}_P^{T}} \vect{\psi}^{"}$ and compare it to \eqref{eq:OperatorMatrixProduct} in order to quantify the error introduced by the approximation of the operator. Figure \ref{fig:error1stShape} shows the errors in the far field detectors relatively to the non approximated ones and to the direct far field ones. The $\mat{L}_P$ have been constructed with an average\footnote{As we require the basis look angles to be equally spaced, the full operator dimension result to be proportional to the number of look angles sampled.} 1000 look angles in the range of $\theta \in [-90\°,90\°]$, for a sphere of radius $\nicefrac{3 \ \lambda}{2}$ bounding a linear array of 5 point sources equally spaced of $\nicefrac{\lambda}{2}$ , with $\nicefrac{\lambda}{10}$ of sampling resolution ($\epsilonup_{	\mrm{Direct} - \mrm{N2F}[\nicefrac{\lambda}{10}]} = 2.68 \ 10^{-3}$).
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{error1stShape}
+\caption{N2F error introduced with the \itt{roof-top} interpolating functions.}
+\label{fig:error1stShape}
+\end{figure} We notice that we need about 130 snapshots in order to introduce an error below $10^{-3}$, such that the approximated operator appears to be non-influent on the far field computation. 
+\par As the pattern is in general a rapidly varying (many orders of magnitude between constructive and destructive interferences) function of the look angle dependent on the number of array elements and their relative spacing, many snapshots would be needed to approximate accurately an array with more than 5 elements. We need a higher slope in the errors as the number of snapshots increases, that is a quick convergence of the approximation into the exact operator. The finite element technique, also based on compact basis functions to approximate a global function, teaches us that we may expect faster convergence with higher order polynomials \cite{JinFEME}. Thus, we proceed introducing the \itt{$2^\mrm{nd}$ order Lagrange polynomials} as depicted in figure \ref{fig:2nd}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=8cm]{2nd}
+\caption{$2^\mrm{nd}$ order interpolating polynomials for the first 3 nodes.}
+\label{fig:2nd}
+\end{figure} The basis of the first element (group of 3 nodes for quadratic basis functions) are expressed as,
+\begin{eqnarray}
+\Theta_{1} (\hat{\mbfit{r}}) &=& \left \{ \begin{array}{c l} ( 1 - \xi ) ( 2 (1 - \xi ) - 1 ),&  \xi = \frac{\theta_{3} \ - \ \theta}{\theta_{3} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_3] \\  0  & \mrm{elsewhere} \end{array} \right. \nonumber \\
+\Theta_{2} (\hat{\mbfit{r}}) &=&  \left \{ \begin{array}{c l} 4 ( 1 - \xi ) ( \xi ) ,&  \xi = \frac{\theta_{3} \ - \ \theta}{\theta_{3} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_3] \\  0  & \mrm{elsewhere} \end{array} \right. \nonumber \\
+\Theta_{3} (\hat{\mbfit{r}}) &=& \left \{ \begin{array}{c l} \xi ( 2 \xi - 1 ), &  \xi = \frac{\theta_{3} \ - \ \theta}{\theta_{3} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_3] \\  0  & \mrm{elsewhere} \end{array} \right. 
+\end{eqnarray} The sequence is then repeated for $q$ = 4, 5 and 6 with the new range of $\theta \in [\theta_4, \theta_6]$ and $\frac{\theta_{6} \ - \ \theta}{\theta_{6} \ - \ \theta_{4}}$, and so on for $q > 6$. We proceed building the approximated operator, and compute the far fields detectors ${\vect{\psi}_{r}^{*}} {\Big |_{\mrm{2^{nd}}}}$. The sampled look angles define the full operator look angles, in order to preserve equal spacing between the interpolation angles. The error convergence plot is shown in figure \ref{fig:error2ndShape}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{error2ndShape}
+\caption{N2F error introduced with the $2^\mrm{nd}$ order interpolating functions.}
+\label{fig:error2ndShape}
+\end{figure} We can see that we get below $10^{-3}$ with only about 50 snapshots, compared to the $\approx$ 130 required by the roof-top approximation. For 200 snapshots, we notice that we achieve an error one order of magnitude lower.
+\par In order to see if we can achieve even faster convergence, \itt{$3^\mrm{rd}$ order Lagrange polynomials} have been also tested.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=8cm]{3rd}
+\caption{$3^\mrm{rd}$ order interpolating polynomials for the first 4 nodes.}
+\label{fig:3rd}
+\end{figure}
+Figure \ref{fig:3rd} shows the \itt{cubic} basis of an element, and they are analytically expressed as
+\begin{eqnarray}
+\Theta_{1} (\hat{\mbfit{r}}) &=& \left \{ \begin{array}{c l} \frac{1}{2} (1-\xi) (2-3 \xi) (1-3 \xi),&  \xi = \frac{\theta_{4} \ - \ \theta}{\theta_{4} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_4] \\  0  & \mrm{elsewhere} \end{array} \right. \nonumber \\
+\Theta_{2} (\hat{\mbfit{r}}) &=& \left \{ \begin{array}{c l} \frac{9}{2} \xi (1-\xi) (2-3 \xi), &  \xi = \frac{\theta_{4} \ - \ \theta}{\theta_{4} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_4] \\  0  & \mrm{elsewhere} \end{array} \right. \nonumber \\
+\Theta_{3} (\hat{\mbfit{r}}) &=& \left \{ \begin{array}{c l} \frac{9}{2} \xi (1-\xi) (3 \xi-1), &  \xi = \frac{\theta_{4} \ - \ \theta}{\theta_{4} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_4] \\  0  & \mrm{elsewhere} \end{array} \right. \nonumber \\
+\Theta_{4} (\hat{\mbfit{r}}) &=& \left \{ \begin{array}{c l} \frac{1}{2} \xi (2-3 \xi) (1-3 \xi), &  \xi = \frac{\theta_{4} \ - \ \theta}{\theta_{4} \ - \ \theta_{1}}, \ \theta \in [\theta_1, \theta_4] \\  0  & \mrm{elsewhere} \end{array} \right.
+\end{eqnarray}
+\par The results of the approximation, made similarly to the two previous cases, are shown in figure \ref{fig:error3rdShape}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{error3rdShape}
+\caption{N2F error introduced with the $3^\mrm{rd}$ order interpolating functions.}
+\label{fig:error3rdShape}
+\end{figure} The convergence slope is higher. Only about 35 snapshots are needed to achieve an error below $10^{-3}$. With 200 snapshots, we have achieved an error two orders of magnitude below the one we had with roof-top functions. Extrapolating the convergence behaviors for each of the error plots of figures \ref{fig:error1stShape}, \ref{fig:error2ndShape} and \ref{fig:error3rdShape}, we may conclude that
+\begin{mycc} \label{cc:FEMbasis}
+Standard FEM $1^\mrm{st}$, $2^\mrm{nd}$, $3^\mrm{rd}$ order polynomials allow the approximation of the N2F operator in the look angle parameter, and the convergence is in the order of, respectively, $40 \ \nicefrac{\mrm{dB}}{\mrm{dec}}$, $60 \ \nicefrac{\mrm{dB}}{\mrm{dec}}$ and $80 \ \nicefrac{\mrm{dB}}{\mrm{dec}}$.
+\end{mycc}
+
+\par The number of snapshots required by a $3^\mrm{rd}$ order basis for the interpolation of an operator acting on the fields produced by an array of 5 point sources is about 35. Before we proceed in the trigonometric polynomials approximation, we check how the error increases as we further increase the radius of the sphere letting the number of the point sources double. The results are shown in figure \ref{fig:errorShape3_10}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{errorShape3_10}
+\caption{N2F error introduced with the $3^\mrm{rd}$ order interpolating functions for an operator build on a sphere enclosing 10 point sources (radius of $\nicefrac{5 \lambda}{4}$ and sampling resolution of $\nicefrac{\lambda}{10}$ ).}
+\label{fig:errorShape3_10}
+\end{figure} The number of snapshots required to preserve the accuracy is about 100, a value that is too high to consider approximating very large arrays.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Trigonometric polynomials interpolation of the N2F Operator}
+
+\par Using a similar formalism as introduced the previous sections \ref{sec:POD} and \ref{sec:PolynomN2F}, we extend the notion of polynomial basis approximation to the case of \itt{complex trigonometric polynomials} of the form 
+\begin{eqnarray}
+\label{eq:ApproxSumTrig}
+z(\hat{\mbfit{r}}(\theta)) &= & \frac{a_0}{2} + \sum_{m=1}^{M} \left [ a_m \cos(m \theta)  + b_m \sin(m \theta) \right ], \nonumber \\
+& & \hspace{-1cm} a_m, b_m \in \mathbb{C} \ \mrm{for} \ 0 \leq m \leq M, \ \ \theta \in \mathbb{R},
+\end{eqnarray} where we have assumed $\hat{\mbfit{r}} \in \mathcal{D}_{\phi = 0\°}$. Using \itt{Euler's formulas} with $\mrm{e}^{i m \theta} = \cos(m \theta)  + i \sin(m \theta) $, $i$ being the imaginary unit, \eqref{eq:ApproxSumTrig} can be rewritten as \cite{BrighamFFT}
+\begin{eqnarray}
+\label{eq:ApproxSumExp}
+z(\hat{\mbfit{r}}(\theta)) &= & \sum_{m=-M}^{M} c_m \mrm{e}^{i m \theta}, \qquad c_m \in \mathbb{C} \ \mrm{for} \ -M \leq m \leq M, \ \ \theta \in \mathbb{R}.
+\end{eqnarray}
+
+\par Now, the complex Fourier series approximation of a function $f(x)$, periodic\footnote{The first of the four Dirichlet conditions \cite{RileyHobsonBenceMMPE}.} of period $L$ such that $f(x) = f(x+L)$, is given by 
+\begin{equation}
+\label{eq:FourierApprox}
+f(x) = \sum_{r=-\infty}^{\infty} c_r \mrm{e}^{i \frac{2\pi}{L} r x},
+\end{equation}
+and the complex coefficients $c_r$ are
+\begin{equation}
+\label{eq:coeffsCr}
+c_r = \frac{1}{L} \int_{x_0}^{x_0+ L} f(x) \mrm{e}^{- i \frac{2\pi}{L} r x} dx,  \qquad x_0 \in \mathbb{R}.
+\end{equation} $\phiup_r(x) = \mrm{e}^{i \frac{2\pi}{L} r x}, \forall r \in \mathbb{Z}$ is a set of orthogonal functions or \itt{eigenfunctions} in the sense of \eqref{eq:eigen}.
+Now, considering $x = \theta$, and as the domain of $\theta$ is, for the spherical geometry of the radiation problem, periodic of $360 \° = 2 \pi$, we set $L = 2 \pi$. For $M \to \infty$, we have that the finite sum approximation \eqref{eq:ApproxSumExp} becomes the Fourier approximation stated in \eqref{eq:FourierApprox} with the variables changes made, thus we can use the highly developed mathematical and numerical foundations on the Fourier series to compute an approximant of $z(\hat{\mbfit{r}}(\theta))$. As we are interested in an approximation of the operator, we evaluate $z(\hat{\mbfit{r}}(\theta)) = \tilde{\mathcal{L}}(\hat{\mbfit{r}}(\theta))$ the approximated functional.
+ 
+\par The coefficients $c_r$ of \eqref{eq:coeffsCr} may be computed by a \itt{Discrete Fourier Transform} (DFT), i.e. by a numerical integration of \eqref{eq:coeffsCr}, the interval $[x_0,x_0+L)$ being subdivided into N equal intervals, and the N samples of $f(x)$ taken in a domain of zero measure\footnote{Zero measure for the sampled function is achieved by a Dirac comb, simplifying the integral by the sifting property of the Dirac delta.}. This step can be efficiently performed through the \itt{Fast Fourier Transform} (FFT) algorithm \cite{BrighamFFT}. The FFT computes the Fourier coefficients $\mat{X}(m)$ of a sequence $\mat{x}(n)$, assuming $\mat{x}(n)$ to be repeated infinitely and periodically along the sampling space and performing the following summations:
+\begin{equation}
+\mat{X}(m) = \sum_{n=1}^{N} \mat{x}(n) \mathrm{e}^{- i \frac{2\pi}{N} (n-1) (m-1)}, \qquad m = 1, ..., N.
+\end{equation}
+The assumption of the periodicity of $\mat{x}(n)$, in our case, is valid as long as our operator is built by scanning $\theta$ all over 360\°. 
+The sampled sequence can be recovered from the coefficients by the \itt{Inverse FFT} (iFFT)
+\begin{equation}
+\mat{x}(n) = \frac{1}{N} \sum_{m=1}^{N} \mat{X}(m) \mathrm{e}^{\frac{j2\pi}{N}(n-1)(m-1)}, \qquad n = 1, ..., N.
+\end{equation}
+Now, assuming the N2F operator to be $\mathcal{L}(\hat{\mbfit{r}}(\theta)) = \mathcal{L}(\theta)$, and $\mat{x}(n)$ the sequence obtained by the snapshots $$\mat{x}(n) = \mathcal{L}(\theta_n) = \mathcal{L}(\frac{2\pi}{N}(n-1)), \qquad n = 1, ..., N,$$ we can express $\mathcal{L}(\theta_n)$ by means of the Fourier coefficients $\mat{X}(m),  m = 1, ..., N$ with their respective eigenfunction $\mrm{e}^{j\theta_n (m-1)}$, $m-1$ being the associated \itt{eigenfrequency}. For the FFT algorithm, the spectrum of the eigenfrequencies is such that the first $m = 2, ..., \lfloor\nicefrac{N}{2}\rfloor+1$ correspond to positive frequencies $(m-1)$ and the next $m = \lfloor\nicefrac{N}{2}\rfloor+2, ...,  N$ correspond to the negative frequencies $N+1-m$. The continuous spectral component corresponds to $m=1$. \itt{Aliasing} \cite{BrighamFFT} in the original sequence reconstruction may occur, and for the \itt{sampling theorem} we need to sample the operator such that $N \geq 2 \ q$ where $q$ is the highest eigenfrequency associated to non null (or numerically significant) coefficient values $\mat{X}(q)$.
+
+\par The discretized eigenfunctions of the FFT can be extrapolated to the continuous case considering $\displaystyle \lim_{N\to\infty} \theta_n = \theta \in [0,2\pi)$, and we obtain $ \displaystyle \mathcal{L}(\theta_n) \to \mathcal{L}(\theta)$.  Thus, we can express the N2F operator as, if the number of sampling points $N$ is odd,
+\begin{eqnarray}
+\label{eq:fullFTT1}
+\mathcal{L}(\theta) &= &\frac{1}{N} \Big ( \mat{X}(1) + \mat{X}(2) \mrm{e}^{i \theta} + \mat{X}(3) \mrm{e}^{i 2 \theta} + \ldots \nonumber \\
+& & \ldots \  + \mat{X}(\lfloor\nicefrac{N}{2}\rfloor+1) \mrm{e}^{i \lfloor\nicefrac{N}{2}\rfloor \theta}  +  \mat{X}(\lfloor\nicefrac{N}{2}\rfloor+2) \mrm{e}^{ -i (\lfloor\nicefrac{N}{2}\rfloor+1) \theta} + \ \ldots \nonumber \\
+& & \ldots \ + \mat{X}(N-2) \mrm{e}^{-i 3 \theta} + \mat{X}(N-1) \mrm{e}^{-i 2 \theta} + \mat{X}(N) \mrm{e}^{- i \theta} \Big ),
+\end{eqnarray} or as, if the number of sampling points $N$ is even,
+\begin{eqnarray}
+\label{eq:fullFTT2}
+\mathcal{L}(\theta) &= &\frac{1}{N} \Big ( \mat{X}(1) + \mat{X}(2) \mrm{e}^{i \theta} + \mat{X}(3) \mrm{e}^{i 2 \theta} + \ \ldots \nonumber \\
+& & \ldots \ + \mat{X}(\nicefrac{N}{2}) \cos(\frac{N}{2} \theta) + \ \ldots \nonumber \\
+& & \ldots \ + \mat{X}(N-2) \mrm{e}^{-i 3 \theta} + \mat{X}(N-1) \mrm{e}^{-i 2 \theta} + \mat{X}(N) \mrm{e}^{- i \theta} \Big ).
+\end{eqnarray}
+Now, performing the trigonometric polynomials approximation or \itt{DFT-truncation} by limiting the number of coefficients to $R \in \mathbb{N}$ around the continuous spectral component, that is the odd number of coefficients $2R+1$ , the full interpolations of \eqref{eq:fullFTT1} and \eqref{eq:fullFTT2} reduce to
+\begin{eqnarray}
+\label{eq:DFTtrunc}
+\tilde{\mathcal{L}}(\theta) & = &\frac{1}{N} \Big ( \mat{X}(1) + \mat{X}(2) \mrm{e}^{i \theta} + \mat{X}(3) \mrm{e}^{i 2 \theta} + \ \ldots \nonumber \\
+& &  \ldots \ + \mat{X}(R+1) \mrm{e}^{i R \theta}  +  \mat{X}(N-R+1) \mrm{e}^{ -i R \theta} + \ \ldots \nonumber \\
+& &  \ldots \ + \mat{X}(N-2) \mrm{e}^{-i 3 \theta} + \mat{X}(N-1) \mrm{e}^{-i 2 \theta} + \mat{X}(N) \mrm{e}^{- i \theta} \Big ).
+\end{eqnarray}
+
+\par It is now possible to apply the DFT-truncation to a selected N2F problem. We chose, in order to compare the results to those obtained by the FEM basis based approximation, a linear array of 5 point sources within a sphere of radius of $\nicefrac{3 \ \lambda}{2}$ and sampling resolution of $\nicefrac{\lambda}{10}$. The number of look angles in order to build the operator matrix of snapshots $\mat{x}_N$ is of $N = 300$ in the range [0\°, 360\°). Figure \ref{fig:DFTspectrum} shows the spectral coefficients $\mat{X}$ computed by an FFT on the rows (look angle dependent) of $\mat{x}_N$.
+
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{DFTspectrum}
+\caption{Spectral coeffients of an operator build for a sphere enclosing 5 point sources (radius of $\nicefrac{3 \lambda}{2}$ and sampling resolution of $\nicefrac{\lambda}{10}$ ).}
+\label{fig:DFTspectrum}
+\end{figure} The spectrum is confined within $\pm 32$ coefficients around the continuous spectral component, range over which they remain in the numerical null level ($\approx -250 \mrm{dB}$).
+
+\par The computation of the error induced in the pattern by the DFT-truncation is shown in figure \ref{fig:errorDFT_5}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{errorDFT_5}
+\caption{Error in the far fields induced by DFT-truncation.}
+\label{fig:errorDFT_5}
+\end{figure} As we can see, the error drops rapidly from 11 coefficients till we have null error with only 65 coefficients. For our purposes, we can retain 21 coefficients in order to achieve the required accuracy in the pattern. This value is lower than that of the $3^\mrm{rd}$ order basis polynomial interpolation, where we needed about 35 snapshots. 
+
+
+\par We may now check the performances of the DFT-truncation as the array grows in the number of point sources. We choose 10 point sources in order to compare the performances to the $3^\mrm{rd}$ order basis approximation results of figure \ref{fig:errorShape3_10}. The results are depicted in figure \ref{fig:errorDFT_10}.
+\begin{figure}[!hbtp]
+\centering
+\includegraphics[width=12cm]{errorDFT_10}
+\caption{Error in the far fields induced by DFT-truncation for the linear array of 10 point sources.}
+\label{fig:errorDFT_10}
+\end{figure} Only 41 coefficients are needed to accurately perform the pattern computations, which is definitely lower than the 100 required for the $3^\mrm{rd}$ order basis approximation.
+
+\par As we have seen along the process of choosing the appropriate approximation space for the N2F operator, we can conclude that
+\begin{mycc}
+The relevant Fourier coefficients have resulted to be a few ones, allowing us to represent the N2F operator as a finite sum of trigonometric polynomials. The performances of the DFT-truncation are better than those achieved by the polynomial interpolation. To compute the values of the coefficients, it is required to oversample the operator in order to avoid aliasing, and this step is dependent on the size of the array enclosed which determines the highest eigenfrequency. The DFT-truncation technique is very promising for large arrays approximations.
+\end{mycc}
+
+
+\section{Low-rank approximations for a bounding parallelepiped}
+
+\par Similar results as those obtained for a bounding sphere, either in the approximation of the near field, unless the field rotation test that specifically requires a sphere (fig. \ref{fig:nfSolid30rot}), or that of the N2F operator, have been obtained for a bounding parallelepiped. Thus, to avoid redundancy, the results for a bounding parallelepiped won't be presented. Notice that, as the number of sampling points with the bounding box are lower than those for the bounding sphere, the computations require less time. The main reason we have decided to perform the computations on a box is that the finite element domain of computation is reduced to a parallelepiped, especially for planar arrays. Using a bounding sphere would lead to an enormous waste of computational resources that we must avoid in order to handle very large arrays.
+
+% 0.4711

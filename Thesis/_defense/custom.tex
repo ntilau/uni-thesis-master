@@ -1,0 +1,88 @@
+%%%%%%%%%%%%%%%%%%%%%
+\usepackage[italian]{babel}
+%\usepackage[latin1]{inputenc}
+%\usepackage{times}
+\usepackage{pgf}
+\usepackage{xcolor}
+\usepackage{multimedia}
+\usepackage{ragged2e}
+\usepackage{textcomp}
+\usepackage[nice]{nicefrac}
+%\usepackage[adobe-utopia]{mathdesign}
+%\usepackage{amsmath, amsfonts, amssymb, amsthm, mathrsfs}
+\usepackage[OMLmathrm, OMLmathbf, sfdefault=cmbr]{isomath}
+%%%
+\newcommand{\quotes}[1]{{``#1''}}
+\newcommand{\acgrave}[1]{\`{#1}}
+\newcommand{\itt}[1]{\textit{#1}}
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\itm}[1]{\mathit{#1}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\mat}[1]{\mathbf{#1}}
+\newcommand{\vect}[1]{\lowercase{ \mathbf{#1}}}
+\newcommand{\dyad}[1]{\overline{\overline{#1}}}
+\newcommand{\mbfit}[1]{\mathbold{#1}}
+\newcommand{\°}[0]{\textrm{\textdegree}}
+\newcommand{\spanning}[1]{ \mathrm{span} \left \{ #1 \right \} }
+\newcommand{\colspan}[1]{ \mathrm{colspan} \left \{ #1 \right \} }
+\newcommand{\kernel}[1]{ \mathrm{ker} \left \{ #1 \right \} }
+\newcommand{\rank}[1]{ \mathrm{rank} \left ( #1 \right ) }
+%\newcommand{\myalert}[1]{\color{mycolor}\textbf{#1} \color{black}}
+
+\newcommand{\putlink}[1]{%
+ \pgfsetlinewidth{1.4pt}%
+ \pgfsetendarrow{\pgfarrowtriangle{4pt}}%
+ \pgfline{\pgfxy(1,1)}{\pgfxy(#1,1)}
+}
+%%%
+%\usepackage[]{hyperref}%[colorlinks]
+\hypersetup{ 
+	pdfstartview={FitV}, % {FitH FitV XYZ null null 1}
+	pdfpagelayout=SinglePage, % SinglePage OneColumn TwoColumnRight
+	pdfdirection=L2R,
+	pdfpagemode = {UseNone}, % UseNone, UseThumbs, UseOutlines, FullScreen, UseOC, UseAttachments
+	pdfsubject = {Model Order Reduction in Finite Element Analysis of Phased Arrays},
+	pdfkeywords = {Model Order Reduction, Finite Element Method, Near to Far Fields Transformations, Phased Arrays},
+	pdfauthor = {Laurent Ntibarikure},
+	pdfproducer = {Laurent Ntibarikure},
+	pdfcenterwindow = true,
+	pdfdisplaydoctitle = true,
+	bookmarksopen=true,
+	bookmarksnumbered,
+	bookmarksopenlevel=\maxdimen, % -1,  \maxdimen 
+	CJKbookmarks=true,
+	bookmarkstype=toc,
+	pdffitwindow=false,
+}
+\mode<presentation>
+{
+\usetheme{Malmoe}
+\setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+\definecolor{mywhite}{rgb}{1,1,1}
+\definecolor{mycolor}{rgb}{.122,.286,.490}
+\definecolor{miorosso}{RGB}{139,35,35}
+\definecolor{miogrigio}{RGB}{229,229,229}
+\setbeamercolor{item}{fg=mycolor}
+\setbeamercolor{title}{fg=mycolor}
+\setbeamercolor{frametitle}{fg=mycolor}
+\setbeamercolor{frametitle}{bg=miogrigio}
+\setbeamercolor{alerted text}{fg=mycolor}
+\setbeamercolor{subsection in head/foot}{bg=mycolor}
+\setbeamercolor{section in head/foot}{bg=black}
+\setbeamercolor{section in toc}{fg=mycolor}
+\setbeamercolor{title in head/foot}{bg=mycolor}
+
+%\setbeamerfont{subsection in head/foot}{size=\footnotesize}
+%\setbeamerfont{section in head/foot}{size=\footnotesize}
+%\setbeamerfont{title in head/foot}{size=\footnotesize}
+%\setbeamerfont{author in head/foot}{size=\footnotesize}
+\setbeamerfont{frametitle}{size=\normalsize}
+\setbeamerfont{framesubtitle}{size=\small,shape=\itshape}
+\newenvironment{colorblock}[2]
+{\setbeamercolor{item}{fg=#1,bg=#1}
+\begin{beamerboxesrounded}[upper=#2,lower=#2,shadow=true]}
+{\end{beamerboxesrounded}}
+}
+
+\graphicspath{{img/}}

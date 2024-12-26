@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper,twoside,openright]{memoir}
+%\documentclass[12pt,a4paper,twoside,openright, draft]{memoir}
+
+%%%%% Essential packages
+\usepackage{soul} % for customization "mychapstyle"
+\usepackage{calc,url,fancyvrb}
+\usepackage{multicol,keyval}
+\usepackage{graphicx,color}
+\graphicspath{{img/}}
+\usepackage[left=3.75cm,top=3.25cm,right=2.5cm,bottom=3.25cm]{geometry}
+%\usepackage{amsmath, amsfonts, amssymb, amsthm, mathrsfs}
+%\usepackage{ccfonts}
+%\usepackage{amsfonts}
+\usepackage[square, comma, numbers, sort&compress]{natbib}
+\usepackage[T1]{fontenc}
+\usepackage[adobe-utopia]{mathdesign}
+\usepackage[OMLmathrm, OMLmathbf, sfdefault=cmbr]{isomath}
+\usepackage{fixmath}
+%\usepackage{sobolev}
+%\usepackage[draft]{fixme}
+%\usepackage[charter]{mathdesign}
+%\usepackage[urw-garamond]{mathdesign}
+%\usepackage{amssymb}%,amsmath, amsthm}
+%\usepackage{fourier}
+%\usepackage{lucidabr}
+%\usepackage[scaled]{luximono}
+%\usepackage[scaled]{berasans}
+\usepackage[english]{babel}
+\usepackage{indentfirst}
+\usepackage[nice]{nicefrac}
+\usepackage{textcomp} % risolve \textdegree per memoir.cls
+%\usepackage[counterclockwise]{rotating} % table rotation
+%\usepackage{fixfoot}
+
+\include{custom}
+\usepackage{mempatch}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%%\newpage
+\aliaspagestyle{title}{empty}
+\include{title15}
+\pdfbookmark[0]{Title}{Title}
+\maketitle
+%\newpage \hbox{} \thispagestyle{empty} \mbox{} \newpage
+
+\include{abstract}
+\include{acknowledgements}
+\include{contents}
+\include{introduction}
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{conclusion}
+\include{bibliography}
+%\newpage \hbox{} \thispagestyle{empty} \mbox{} \newpage
+
+\end{document}

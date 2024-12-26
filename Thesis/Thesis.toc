@@ -1,0 +1,43 @@
+\select@language {english}
+\contentsline {chapter}{Acknowledgments}{v}{section*.2}
+\contentsline {chapter}{Contents}{vii}{section*.4}
+\contentsline {chapter}{Introduction}{1}{section*.5}
+\contentsline {chapter}{\chapternumberline {1}Near Field to Far Field Transformation}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Radiation in a bounded medium}{6}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Symmetrized form of the Maxwell's equations}{9}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}The wave equation}{10}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Scalar Huygens' principle}{11}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Vector Huygens' principle}{14}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Scalar near field to far field transformation}{19}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Computation steps}{20}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Computations on a bounding sphere}{21}{subsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.2.1}Pattern in spherical coordinates}{24}{subsubsection.1.2.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2.2}Numerical implementation}{25}{subsubsection.1.2.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Computations on a bounding parallelepiped}{31}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Vector near fields to far fields transformations}{36}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Direct computation of the fields from current sources}{38}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Near fields to far fields computations}{40}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Radiation pattern}{41}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}Numerical results}{43}{subsection.1.3.4}
+\contentsline {chapter}{\chapternumberline {2}Low-Rank Approximations for Fields Transformations}{49}{chapter.2}
+\contentsline {section}{\numberline {2.1}Approximations of the near field}{50}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Proper orthogonal decomposition}{50}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Singular value decomposition}{51}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Space spanned by the scanned near field}{53}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Approximations of the near field to far field operator}{67}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Polynomial interpolation of the N2F operator}{68}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Trigonometric polynomials interpolation of the N2F Operator}{76}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Low-rank approximations for a bounding parallelepiped}{81}{section.2.3}
+\contentsline {chapter}{\chapternumberline {3}Model Order Reduction of Phased Array Antennas}{83}{chapter.3}
+\contentsline {section}{\numberline {3.1}The FEM vector Helmholtz formulation}{84}{section.3.1}
+\contentsline {section}{\numberline {3.2}Projection-based model order reduction}{88}{section.3.2}
+\contentsline {section}{\numberline {3.3}Scan and look angles parameterized radiation model}{89}{section.3.3}
+\contentsline {section}{\numberline {3.4}Proper choice of the trial and test spaces}{92}{section.3.4}
+\contentsline {section}{\numberline {3.5}Numerical examples}{94}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}3 by 5 patch antennas array}{95}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Galerkin projection method on cut planes}{100}{subsubsection.3.5.1.1}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Dual space projection method on cut planes}{103}{subsubsection.3.5.1.2}
+\contentsline {subsubsection}{\numberline {3.5.1.3}Galerkin projections for three-dimensional scanning}{104}{subsubsection.3.5.1.3}
+\contentsline {subsection}{\numberline {3.5.2}40 dual-polarized tapered slot antennas}{108}{subsection.3.5.2}
+\contentsline {chapter}{Conclusions}{115}{section*.7}
+\contentsline {chapter}{References}{117}{section*.9}

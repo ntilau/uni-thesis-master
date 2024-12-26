@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {italian}
+\beamer@sectionintoc {1}{Generalit\`a}{3}{0}{1}
+\beamer@sectionintoc {2}{I materiali e le strutture}{14}{0}{2}
+\beamer@subsectionintoc {2}{1}{Radome organici}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{Radome inorganici}{21}{0}{2}
+\beamer@sectionintoc {3}{Interazione radome-antenna}{22}{0}{3}
+\beamer@sectionintoc {4}{Performance EM di un radome}{27}{0}{4}
+\beamer@subsectionintoc {4}{1}{Progetto EM di un radome}{27}{0}{4}
+\beamer@subsectionintoc {4}{2}{Caratterizzazione EM di un radome}{29}{0}{4}

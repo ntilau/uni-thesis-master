@@ -1,0 +1,38 @@
+\BOOKMARK [0][-]{Title.0}{Title}{}% 1
+\BOOKMARK [0][-]{section*.2}{Acknowledgments}{}% 2
+\BOOKMARK [0][-]{section*.4}{Contents}{}% 3
+\BOOKMARK [0][-]{section*.5}{Introduction}{}% 4
+\BOOKMARK [0][-]{chapter.1}{1 Near Field to Far Field Transformation}{}% 5
+\BOOKMARK [1][-]{section.1.1}{1.1 Radiation in a bounded medium}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.1}{1.1.1 Symmetrized form of the Maxwell's equations}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.2}{1.1.2 The wave equation}{section.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.3}{1.1.3 Scalar Huygens' principle}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.4}{1.1.4 Vector Huygens' principle}{section.1.1}% 10
+\BOOKMARK [1][-]{section.1.2}{1.2 Scalar near field to far field transformation}{chapter.1}% 11
+\BOOKMARK [2][-]{subsection.1.2.1}{1.2.1 Computation steps}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.2}{1.2.2 Computations on a bounding sphere}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.3}{1.2.3 Computations on a bounding parallelepiped}{section.1.2}% 14
+\BOOKMARK [1][-]{section.1.3}{1.3 Vector near fields to far fields transformations}{chapter.1}% 15
+\BOOKMARK [2][-]{subsection.1.3.1}{1.3.1 Direct computation of the fields from current sources}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.2}{1.3.2 Near fields to far fields computations}{section.1.3}% 17
+\BOOKMARK [2][-]{subsection.1.3.3}{1.3.3 Radiation pattern}{section.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.3.4}{1.3.4 Numerical results}{section.1.3}% 19
+\BOOKMARK [0][-]{chapter.2}{2 Low-Rank Approximations for Fields Transformations}{}% 20
+\BOOKMARK [1][-]{section.2.1}{2.1 Approximations of the near field}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Proper orthogonal decomposition}{section.2.1}% 22
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 Singular value decomposition}{section.2.1}% 23
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Space spanned by the scanned near field}{section.2.1}% 24
+\BOOKMARK [1][-]{section.2.2}{2.2 Approximations of the near field to far field operator}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Polynomial interpolation of the N2F operator}{section.2.2}% 26
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Trigonometric polynomials interpolation of the N2F Operator}{section.2.2}% 27
+\BOOKMARK [1][-]{section.2.3}{2.3 Low-rank approximations for a bounding parallelepiped}{chapter.2}% 28
+\BOOKMARK [0][-]{chapter.3}{3 Model Order Reduction of Phased Array Antennas}{}% 29
+\BOOKMARK [1][-]{section.3.1}{3.1 The FEM vector Helmholtz formulation}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.2}{3.2 Projection-based model order reduction}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.3}{3.3 Scan and look angles parameterized radiation model}{chapter.3}% 32
+\BOOKMARK [1][-]{section.3.4}{3.4 Proper choice of the trial and test spaces}{chapter.3}% 33
+\BOOKMARK [1][-]{section.3.5}{3.5 Numerical examples}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.5.1}{3.5.1 3 by 5 patch antennas array}{section.3.5}% 35
+\BOOKMARK [2][-]{subsection.3.5.2}{3.5.2 40 dual-polarized tapered slot antennas}{section.3.5}% 36
+\BOOKMARK [0][-]{section*.7}{Conclusions}{}% 37
+\BOOKMARK [0][-]{section*.9}{References}{}% 38

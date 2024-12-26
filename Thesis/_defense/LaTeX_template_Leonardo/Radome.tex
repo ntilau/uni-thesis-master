@@ -1,0 +1,577 @@
+% $Header: /cvsroot/latex-beamer/latex-beamer/solutions/generic-talks/generic-ornate-15min-45min.en.tex,v 1.5 2007/01/28 20:48:23 tantau Exp $
+
+\documentclass[trans,10pt]{beamer}
+
+% This file is a solution template for:
+
+% - Giving a talk on some subject.
+% - The talk is between 15min and 45min long.
+% - Style is ornate.
+
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+%%%%%%% per testo giustificato %%%%%%%%%%%%%%
+\usepackage{ragged2e}
+%%%%%%%%%%%%%%%%%%%%%
+\usepackage[italian]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+
+\mode<presentation>
+{
+\usetheme{Malmoe}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Copenhagen}
+\usefonttheme{serif} 
+\setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+\definecolor{miorosso}{RGB}{139,35,35}
+\definecolor{miogrigio}{RGB}{229,229,229}
+\setbeamercolor{item}{fg=miorosso}
+\setbeamercolor{title}{fg=miorosso}
+\setbeamercolor{frametitle}{fg=miorosso}
+\setbeamercolor{frametitle}{bg=miogrigio}
+\setbeamercolor{section in toc}{fg=miorosso}
+\setbeamercolor{alerted text}{fg=miorosso}
+\setbeamercolor{subsection in head/foot}{bg=miorosso}
+\setbeamercolor{title in head/foot}{bg=miorosso}
+%\setbeamerfont{subsection in head/foot}{size=\footnotesize}
+%\setbeamerfont{section in head/foot}{size=\footnotesize}
+%\setbeamerfont{title in head/foot}{size=\footnotesize}
+%\setbeamerfont{author in head/foot}{size=\footnotesize}
+\setbeamerfont{frametitle}{size=\normalsize}
+\setbeamerfont{framesubtitle}{size=\small,shape=\itshape}
+}
+
+
+\title[I radome] % (optional, use only with long paper titles)
+{I radome}
+
+\subtitle
+{Antenne II / Antenne in ambiente operativo} % (optional)
+
+\author[L. Lucci - Università di Firenze] % (optional, use only with lots of authors)
+%{F.~Author\inst{1} \and S.~Another\inst{2}}
+{Leonardo Lucci \\
+   {\scriptsize \textit{leonardo.lucci@unifi.it}}
+}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+
+\institute[Università di Firenze] % (optional, but mostly needed)
+{
+  Dipartimento di Elettronica e Telecomunicazioni\\
+  \vspace*{6pt}Università di Firenze 
+}
+% - Use the \inst command only if there are several affiliations.
+% - Keep it simple, no one is interested in your street address.
+
+\date[] % (optional)
+{A.A. 2008/2009}
+
+\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+ \pgfdeclareimage[height=0.8cm]{university-logo}{logo_1}
+ \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+\AtBeginSubsection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,currentsubsection]
+  \end{frame}
+}
+
+
+% If you wish to uncover everything in a step-wise fashion, uncomment
+% the following command: 
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+  % You might wish to add the option [pausesections]
+\end{frame}
+
+
+% Since this a solution template for a generic talk, very little can
+% be said about how it should be structured. However, the talk length
+% of between 15min and 45min and the theme suggest that you stick to
+% the following rules:  
+
+% - Exactly two or three sections (other than the summary).
+% - At *most* three subsections per section.
+% - Talk about 30s to 2min per frame. So there should be between about
+%   15 and 30 frames, all told.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Generalità}
+
+\begin{frame}{Funzione}{}
+
+\begin{itemize}\justifying
+	\item Il radome (radar dome) è l'involucro che in alcuni casi contiene l'antenna
+	\item[]
+	\item La funzione principale del radome è quella di proteggere l'antenna da esso racchiusa dagli agenti ambientali esterni (carico del vento, ghiaccio, neve, pioggia, temperatura)
+	\item[]
+	\item Idealmente il radome dovrebbe essere completamente trasparente alla radiofrequenza (RF) e non dovrebbe degradare le performance elettromagnetiche dell'antenna
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Tipologia}{}
+
+\begin{itemize}	
+\item	Un guscio in materiale dielettrico
+\item[]
+\item Strati di materiale metallico perforato
+\item[]
+\item Può comprendere strutture metalliche o dielettriche di sostegno
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Cenni storici}{}
+\begin{itemize}\justifying
+\item Gli aeromobili a bassa velocità impiegati durante la seconda guerra mondiale, consentivano l'impiego di antenne esterne di tipo Yagi-Uda o ad array di dipoli operanti in VHF.
+\item[]
+\item Nel 1941 negli Stati Uniti e nel Regno Unito sono sperimentati radar a microonde e si ha il primo volo di un aeromobile ad alta velocità che monta un radome in plexiglass per un radar sperimentale  in banda S (2-4GHz) della Western Electric
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Cenni storici}{}
+\begin{itemize}\justifying
+\item Dal 1943 iniziano a diffondersi radome per aeromobili in legno compensato (ampia diffusione anche a bordo di alcune imbarcazioni della marina statunitense, a bordo dei dirigibili e nelle stazioni di terra): problema dell'umidità e della realizzazione di superfici con doppia curvatura
+\item[]
+\item Dal 1944 si iniziano a studiare strutture a sandwich a tre strati (skin-core-skin) con rivestimento in fibra di vetro e nucleo in polistirene
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Applicazioni}{}
+\begin{itemize}
+\item Sistemi terrestri
+\item[]
+\item Sistemi marittimi
+\item[]
+\item Sistemi a bordo di aeromobili
+\item[]
+\item Sistemi missilistici
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Applicazioni}{}
+\begin{center}
+\includegraphics[height=3.5cm]{Radome_satellitare}  \hspace{1cm} \includegraphics[height=3.5cm]{Radome_satellitare_imbarcazione}\\
+Radome per comunicazioni satellitari: vista in primo piano  e installazione a bordo di una imbarcazione \\
+\vspace*{1cm}{\small {[}D. J. Kozakoff, Analysis of Radome-Enclosed Antennas, Artech House, Boston-London, 1997{]} }
+\end{center}
+\end{frame}
+
+\begin{frame}{Forme}{}
+\begin{itemize}\justifying
+\item Forma sferica (grandi antenne delle stazioni terrestri)
+\item[]
+\item forma smussata per contenere la resistenza aerodinamica o \emph{drag} (a bordo di velivoli o missili)
+\item[]
+\item spesso il radome è montato sul naso del velivolo per minimizzare il \emph{drag}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Forme}{}
+\begin{columns}
+\column{.5\textwidth}\center
+Radome al Misawa Security Operations Center, Misawa, Japan\\
+\vspace*{.7cm}\includegraphics[width=\textwidth]{MisawaSecurityOperationCenter}
+\column{.5\textwidth}\center
+Radome montato sul \emph{cockpit} di un aereo\\
+\includegraphics[width=\textwidth]{RadomeMeteoAereo1}\\
+\vspace*{.3cm}\includegraphics[height=.4\textheight]{RadomeMeteoAereo}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Forme}{Esempi di radome a bordo di velivoli}
+\begin{center}
+\includegraphics[width=.6\textwidth]{AEWC} \\
+Sistema Airborne Early Warning and Control (AEW\&C) a bordo di  un Boeing E-3 Sentry della Royal Air Force
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Materiali}{}
+Fin dai primi anni gli studi sui materiali impiegati per la realizzazione dei radome hanno riguardato due aree principali:\vspace{12pt}
+\begin{itemize}
+\item radome ceramici impiegati in applicazioni missilistiche (altissima velocità)
+\item[]
+\item strutture composite a sandwich che utilizzano materiali organici ad elevata resistenza
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Chi costruisce radome}{}
+\begin{itemize}
+	\item L-3 Communications ESSCO (Massachussets, USA / Ireland)\\
+\textit{http://www.l-3com.com/ESSCO/index.html}
+\item[]
+\item AFC (Florida, USA)\\ 
+\textit{http://www.afcsat.com/}
+\item[]
+\item Radome srl (Bergamo, Italy)\\
+\textit{http://www.radome.it/home.html}
+\item[]
+\item Microwave Instrumentation Technologies (Georgia, USA) - ex Scientific Atlanta\\
+\textit{http://www.mi-technologies.com/index.html}
+\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{I materiali e le strutture}
+
+\begin{frame}{Proprietà dei materiali}{}
+Proprietà elettriche (dipendenti generalmente dalla frequenza di lavoro)
+\begin{itemize}
+	\item costante dielettrica relativa
+\item tangente di perdita del dielettrico
+\end{itemize}
+\vspace*{12pt}Proprietà termo-meccaniche
+\begin{itemize}
+\item flessibilità, durezza e resistenza
+\item densità del materiale
+\item caratteristiche di assorbimento dell'acqua
+\item resistenza all'erosione da pioggia
+reazione agli shock termici
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Tipologia di materiali}{}
+Per quanto attiene ai materiali i radome possono essere raggruppati in due grandi famiglie:\vspace{12pt}
+\begin{itemize}\justifying
+\item Radome con pareti dielettriche organiche : applicazioni a bassa temperatura (aeronautica civile e militare, veicoli terrestri e stazioni di terra) per cui T = 250°C (T = 500°C per brevi intervalli di tempo)
+\item[]
+\item Radome con pareti dielettriche inorganiche (ceramiche): applicazioni ad alta temperatura (aerei o missili supersonici)
+\end{itemize}
+\end{frame}
+
+\subsection{Radome organici}
+
+\begin{frame}{Strutture}{}
+\begin{itemize}\justifying
+\item strutture monolitiche (\textit{style-a} e \textit{style-b} [MIL-R-7705B]): si tratta di strutture solide costituite da resine che eventualmente  incorporano elementi di rinforzo (fibra di vetro)
+\item[]
+\item strutture \textcolor{red}{a sandwich (\textit{style-c} o \textit{A-sandwich}}, \textit{style-d} e \textit{style-e} [MIL-R-7705B]): si tratta di strutture che alternano strati di materiale ad alta densità e costante dielettrica a strati di materiale a bassa densità e costante dielettrica
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Struttura monolitica}{}
+\end{frame}
+
+\begin{frame}{Struttura a sandwich}{}
+\end{frame}
+
+\begin{frame}{Struttura a sandwich}{Laminato interno ed esterno}
+	\end{frame}
+
+\begin{frame}{Struttura a sandwich}{Nucleo}
+\end{frame}
+
+\subsection{Radome inorganici}
+
+\begin{frame}{Radome inorganici}{}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interazione radome-antenna}
+
+\begin{frame}{}{}
+\end{frame}
+
+\begin{frame}{Effetti del radome}{}
+\end{frame}
+
+\begin{frame}{Parametri che determinano le performance di un radome}{}
+\end{frame}
+
+\begin{frame}{Parametri di interesse nelle varie applicazioni}{}
+\end{frame}
+
+\begin{frame}{Parametri di interesse nelle varie applicazioni}{}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Performance EM di un radome}
+
+\subsection{Progetto EM di un radome}
+
+\begin{frame}{Vincoli e parametri di progetto}{}
+Le variabili che determinano i parametri di performance di un radome sono di due tipi:\\ \vspace{6pt}
+\begin{itemize}\justifying
+\item \textbf{Vincoli di progetto}: variabili che non costituiscono gradi di libertà per il progettista elettromagnetico, poiché vengono scelti per soddisfare esigenze irrinunciabili (requisiti termo-meccanici del materiale, resistenza aerodinamica o resistenza al vento della forma, dimensioni necessarie per proteggere l'antenna, caratteristiche meccaniche ed EM dell'antenna)
+\item[]
+\item \textbf{Variabili di progetto}: sono i gradi di libertà che il progettista ha per ottimizzare le performance del radome (in particolare composizione e configurazione delle pareti)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Procedura di progetto}{}
+\begin{itemize}\justifying
+\item Il progetto di un radome inizia con la scelta di una struttura di base che viene ottimizzata mediante un procedimento euristico, di tipo \textit{trial-and-error}, in cui i parametri del radome vengono ottimizzati per successive valutazioni delle performance.
+\item[]
+\item La caratterizzazione del radome può essere effettuata sia mediante misure, che mediante l'ausilio di tecniche numeriche.
+\item[]
+\item In fase di progetto la conoscenza dei contributi di campo all'interno di un radome aiuta ad individuare le regioni che generano significative riflessioni interne e che contribuiscono maggiormente alla degradazione delle performance dell'antenna.
+\end{itemize}
+\end{frame}
+
+\subsection{Caratterizzazione EM di un radome}
+
+\begin{frame}{Misura della distribuzione di campo all'interno del radome}{Setup di misura}
+\begin{center}
+\includegraphics[width=.7\textwidth]{setup_misura} \\
+\end{center}
+\end{frame}
+
+\begin{frame}{Misura della distribuzione di campo all'interno del radome}{Esempio di misura di side lobe level}
+\begin{columns}
+\column{.5\textwidth}\center
+\includegraphics[width=.7\textwidth]{angolo_gimbal}\\
+\vspace*{.2cm}\includegraphics[width=\textwidth]{misura_sll}
+\column{.5\textwidth}
+$f=16.5$GHz\\
+$\beta=36°$ (angolo di \textit{gimbal})\\
+$D=33$cm\\
+$L=66$cm\\
+$t=0.49$cm\\
+$\epsilon=4$\\
+\vspace*{12pt}\textcolor{red}{Le riflessioni dovute al radome determinano l'innalzamento dei lobi laterali}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Misura della distribuzione di campo all'interno del radome}{Esempio di misura dello sfasamento}
+\begin{columns}
+\column{.5\textwidth}\center
+\includegraphics[width=.7\textwidth]{angolo_gimbal}\\
+\vspace*{.2cm}\includegraphics[width=.8\textwidth]{misura_fase}
+\column{.5\textwidth}
+$f=16.5$GHz\\
+$\beta=36°$ (angolo di \textit{gimbal})\\
+$D=33$cm\\
+$L=66$cm\\
+$t=0.49$cm\\
+$\epsilon=4$\\
+\vspace*{12pt}\textcolor{red}{La distorsione del fronte di fase determina l'errore di boresight}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Misura della distribuzione di campo all'interno del radome}{Esempio di compact range per la misura delle performance EM di un sistema di antenna con radome}
+\begin{center}
+\includegraphics[width=.7\textwidth]{compact_range} \\
+\vspace*{6pt}Naval Air Weapons Station Point Mugu \\(Scientific-Atlanta compact range 46m x 46m x 18m)
+\end{center}
+\end{frame}
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{}
+\begin{itemize}
+	\item Propagazione di un'onda piana attraverso un dielettrico piano multistrato indefinito
+\item Si considera un modello a piastre piane (radome localmente piano)
+\item Valutazione dell'angolo di incidenza
+\end{itemize}
+\begin{columns}
+\column{.5\textwidth}\center
+\includegraphics[width=.9\textwidth]{spm}
+\column{.5\textwidth}
+\includegraphics[width=.9\textwidth]{incidenza_su_piastra}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{}
+\begin{center}
+Si suppone che il mezzo (0) sia il vuoto\\
+\vspace*{6pt}\includegraphics[width=.7\textwidth]{multistrato_1} \\
+\end{center}
+\end{frame}
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{}
+\begin{columns}
+\column{.5\textwidth}\center
+\includegraphics[width=\textwidth]{multistrato_2}
+\column{.5\textwidth}
+$n_i=\sqrt{\epsilon_{ri}}$ \\
+\vspace*{6pt}indice di rifrazione del materiale (dielettrico)
+\end{columns}
+\vspace*{6pt}\begin{center}
+Legge della rifrazione dell'ottica (Legge di Snell)\\
+\vspace*{6pt}$n_0 \sin\theta_0=n_1 \sin\theta_1=n_2 \sin\theta_2=n_3 \sin\theta_3=n_4 \sin\theta_4$
+\end{center}
+\end{frame}
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{Problema di base:singola interfaccia (onde riferite immediatamente a sx e a dx dell'interfaccia)}
+\begin{columns}
+\column{.6\textwidth}\center
+\includegraphics[height=3cm]{piano_incidenza}
+\column{.4\textwidth}\center
+\includegraphics[height=3cm]{singola_interfaccia}
+\end{columns}
+\begin{displaymath}
+\begin{array}{c}
+k_i^\perp=k_i^\parallel=k_0n_i\cos\theta_i\\
+ \\
+\begin{array}{ll}
+Z_i^\perp=\frac{\zeta_i}{\cos\theta_i} & Z_i^\parallel=\zeta_i\cos\theta_i \\
+ \\
+R_1^\perp=\frac{B_1}{C_1}\arrowvert_{B_2=0}=\frac{Z_2^\perp-Z_1^\perp}{Z_2^\perp+Z_1^\perp} & R_1^\parallel=\frac{B_1}{C_1}\arrowvert_{B_2=0}=\frac{Z_2^\parallel-Z_1^\parallel}{Z_2^\parallel+Z_1^\parallel} \\
+ \\
+T_1^\perp=\frac{C_2}{C_1}\arrowvert_{B_2=0}=1+R_1^\perp & T_1^\parallel=\frac{C_2}{C_1}\arrowvert_{B_2=0}=(1+R_1^\parallel)\frac{\zeta_2}{\zeta_1}
+\end{array}
+\end{array}
+\end{displaymath}
+\end{frame}
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{}
+\begin{columns}
+\column{.5\textwidth}\center
+Per la polarizzazione perpendicolare\\
+\begin{displaymath}
+\begin{array}{l}
+C_2=C_1T_1+B_2R'_1\\
+\\
+B_1=C_1R_1+B_2T'_1\\
+\\
+R'_1=-R_1\\
+\\
+T'_1=1+R'_1=1-R_1
+\end{array}
+\end{displaymath}
+\column{.5\textwidth}\center
+Per la polarizzazione perpendicolare\\
+\begin{displaymath}
+\begin{array}{l}
+C_2=C_1T_1+B_2R'_1\\
+\\
+B_1=C_1R_1+B_2T'_1\\
+\\
+R'_1=-R_1\\
+\\
+T'_1=(1+R'_1)\frac{\zeta_1}{\zeta_2}=(1-R_1)\frac{\zeta_1}{\zeta_2}
+\end{array}
+\end{displaymath}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{}
+\begin{center}
+Per entrambi le polarizzazioni vale dunque:\\
+\begin{displaymath}
+\begin{array}{l}
+C_1=\frac{1}{T_1}C_2+\frac{R_1}{T_1}B_2\\
+ \\
+B_1=\frac{R_1}{T_1}C_2+\frac{1}{T_1}B_2
+\end{array}
+\end{displaymath}\\
+Ovvero in forma matriciale:\\
+\begin{displaymath}
+\left [
+\begin{array}{c}
+C_1\\B_1
+\end{array}
+\right ]
+=\frac{1}{T_1}
+\left [
+\begin{array}{cc}
+1 & R_1\\R_1 & 1
+\end{array}
+\right ]
+\left [
+\begin{array}{c}
+C_2\\B_2
+\end{array}
+\right ]
+\end{displaymath}
+\end{center}
+\end{frame}
+
+\begin{frame}{Propagazione attraverso dielettrici piani multistrato}{Cascata di problemi elementari (onde riferite immediatamente a sx di ciascuna interfaccia)}
+\begin{columns}
+\column{.6\textwidth}\center
+\includegraphics[height=3cm]{piano_incidenza}
+\column{.4\textwidth}\center
+\includegraphics[height=3cm]{singola_interfaccia}
+\end{columns}
+\begin{displaymath}
+\left [
+\begin{array}{c}
+C_1\\B_1
+\end{array}
+\right ]
+=\prod_{i=1}^N\frac{1}{T_1}
+\left [
+\begin{array}{cc}
+e^{jk_it_i} & R_ie^{-jk_it_i}\\R_ie^{jk_it_i} & e^{-jk_it_i} 
+\end{array}
+\right ]
+\left [
+\begin{array}{c}
+C_{N+1}\\B_{N+1}
+\end{array}
+\right ]=
+\left [
+\begin{array}{cc}
+A_{11} & A_{12}\\A_{21} & A_{22} 
+\end{array}
+\right ]
+\left [
+\begin{array}{c}
+C_{N+1}\\B_{N+1}
+\end{array}
+\right ]
+\end{displaymath}
+\end{frame}
+
+\begin{frame}{Trasmissione attraverso una struttura A-sandwich}{Polarizzazione perpendicolare}
+\end{frame}
+
+\begin{frame}{Trasmissione attraverso una struttura A-sandwich}{Polarizzazione parallela}
+\end{frame}
+
+\begin{frame}{Tecniche di analisi}{Ottica Geometrica}
+\end{frame}
+
+\begin{frame}{Tecniche di analisi}{Ottica Geometrica in ricezione}
+\end{frame}
+
+\begin{frame}{Tecniche di analisi}{Ottica Geometrica in trasmissione}
+\end{frame}
+
+\begin{frame}{Tecniche di analisi}{Altre tecniche}
+\end{frame}
+
+\end{document}

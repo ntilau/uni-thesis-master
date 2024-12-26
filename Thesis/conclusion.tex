@@ -1,0 +1,21 @@
+\cleardoublepage
+\thispagestyle{myheadings}
+\renewcommand\thefigure{\arabic{figure}}
+\markright{CONCLUSIONS}
+\pagestyle{myheadings}
+\phantomsection
+\addcontentsline{toc}{chapter}{Conclusions}
+\chapter*{Conclusions}
+
+\par The model order reduction techniques have demonstrated in the last two decades to be very promising in the full-wave analysis of electromagnetic structures. The most interesting issues arouse from the fact it is possible to achieve, with less computational requirements, the response of the electromagnetic structure in front of a parameter sweep \cite{SelleriEdlingerDDMOR}, and even multiple parameters sweeps \cite{FarleMORFE}. Well established methodologies for computing fast frequency sweeps are nowadays available. For example, the \itt{Adaptive Lanczos-Padé Sweep} (ALPS) \cite{BrackenSunCendesSDom} is implemented in HFSS, confirming its robust formulation. In scattering problems \cite{LedgerPerairePESSRIWA}, the incidence angles of plane waves have been parameterized in order to achieve the radar cross section of a scatterer through model order reduction.
+
+\par The fundamental idea on which the projection-based model order reductions  is based is the possibility to project a parameterized full order model onto a low dimensional subspace of appropriate global shape functions, keeping the necessary informations associated to that subspace. In this thesis, it has been shown that, parameterizing the input and output system vectors of the radiation model of a phased array in the scan and look angles then projecting the system onto an appropriately chosen scan angle subspace, highly efficient computations of the far fields pattern in front of a beam steering process can be achieved. The technique employed lead to reduced order models of dimensions comparable to the number of radiating elements that compose the array, where the original model, due to the high flexibility of the full-wave analysis which requires the use of local basis, was several orders of magnitude higher.
+
+\par According to \cite{FarleMORFE}, it is possible to include further polynomial parameterizations in finite element models of microwave structures. Taking into account the frequency response of the radiating elements, and including variability of the dielectric and eventually ferromagnetic materials properties by appropriate polynomial parameterization of the system matrices, may lead to multivariate reduced order models of phased arrays capable to give to the designer precious informations on the tolerances associated to physical realization. 
+
+\par The significant computational timings reduction, typically of several orders compared to the full model parameter sweep requirements \cite{SelleriEdlingerDDMOR}, may allow fast optimization processes, either with deterministic algorithms or non-deterministic ones like the genetic algorithms, thus improving significantly the overall design process.
+
+
+% When considering radiation systems, the possibility to realize a system which, utilizing reduced models for accuracy and real-time synthesis of the desired pattern arouses a non negligible interest. the difficulties are mainly in the choice of the best optimization algorithm for fast design. The computational resources required in that stage could be easily implemented in a powerful embedded system
+
+%However, it is possible to reduce the FEM model, which has a large number of equations to be solved (as the number of elements used for geometrical discretrization, the so-called degrees of freedom (DoF)), to a relatively much lower order model while keeping the relevant information with an acceptable error, which for example could be solved by the current digital signal processors (DSPs) embedded in the cellular handsets.
